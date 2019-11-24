@@ -56,7 +56,7 @@
                     * [无类别域间路由地址（CIDR）](books/1079.md)
                     * [网络地址转换（NAT）](books/1080.md)
                     * [实验](books/1096.md)
-                        * [C类地址子网划分](books/1097.md)
+                    * [C类地址子网划分](books/1097.md)
                 * [ARP协议](books/1081.md)
                 * [ICMP协议](books/1082.md)
                 * [IP路由与路由协议](books/1083.md)
