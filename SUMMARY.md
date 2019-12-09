@@ -73,6 +73,7 @@
                 * [局域网概述](books/1065.md)
                 * [以太网技术](books/1066.md)
                 * [虚拟局域网](books/1067.md)
+                    * [VLAN实验](books/1099.md)
             * [物理层](books/1052.md)
                 * [概述](books/1022.md)
                 * [通信基础](books/1023.md)
@@ -89,5 +90,7 @@
     * [test](books/1094.md)
     * [arp](books/1087.md)
     * [tcpdump](books/1095.md)
+* [Cisco](books/1100.md)
+    * [基本命令](books/1098.md)
 * [end1098](books/1999.md)
 
