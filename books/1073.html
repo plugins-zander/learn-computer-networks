@@ -1,0 +1,2170 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IP地址 · learn-computer-networks</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1074.html" />
+    
+    
+    <link rel="prev" href="1072.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://zlogs.net" target="_blank" class="custom-link"># 博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://zlogs.net/learn-books" target="_blank" class="custom-link"># 总目录</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1010.html">
+            
+                <a href="1010.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1011.html">
+            
+                <a href="1011.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1012.html">
+            
+                <a href="1012.html">
+            
+                    
+                    定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1013.html">
+            
+                <a href="1013.html">
+            
+                    
+                    发展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="1034.html">
+            
+                <a href="1034.html">
+            
+                    
+                    功能应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="1014.html">
+            
+                <a href="1014.html">
+            
+                    
+                    组织标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1015.html">
+            
+                <a href="1015.html">
+            
+                    
+                    组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1016.html">
+            
+                <a href="1016.html">
+            
+                    
+                    硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1017.html">
+            
+                <a href="1017.html">
+            
+                    
+                    软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1030.html">
+            
+                <a href="1030.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="1032.html">
+            
+                <a href="1032.html">
+            
+                    
+                    因特网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1.1" data-path="1031.html">
+            
+                <a href="1031.html">
+            
+                    
+                    工作方式-边核
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1025.html">
+            
+                <a href="1025.html">
+            
+                    
+                    层次
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1026.html">
+            
+                <a href="1026.html">
+            
+                    
+                    资源子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1027.html">
+            
+                <a href="1027.html">
+            
+                    
+                    通讯子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1018.html">
+            
+                <a href="1018.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="1019.html">
+            
+                <a href="1019.html">
+            
+                    
+                    通信距离-局广城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="1020.html">
+            
+                <a href="1020.html">
+            
+                    
+                    使用范围-公专
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="1021.html">
+            
+                <a href="1021.html">
+            
+                    
+                    通信传播方式-点广
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="1028.html">
+            
+                <a href="1028.html">
+            
+                    
+                    拓扑结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="1055.html">
+            
+                <a href="1055.html">
+            
+                    
+                    信息交换方式-路组报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="1024.html">
+            
+                <a href="1024.html">
+            
+                    
+                    通信介质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="1053.html">
+            
+                <a href="1053.html">
+            
+                    
+                    传输带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="1054.html">
+            
+                <a href="1054.html">
+            
+                    
+                    速率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="1033.html">
+            
+                <a href="1033.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1035.html">
+            
+                <a href="1035.html">
+            
+                    
+                    衡量标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1037.html">
+            
+                <a href="1037.html">
+            
+                    
+                    体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1036.html">
+            
+                <a href="1036.html">
+            
+                    
+                    分层模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="1039.html">
+            
+                <a href="1039.html">
+            
+                    
+                    OSI模型和TCP／IP模型的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="1040.html">
+            
+                <a href="1040.html">
+            
+                    
+                    TCP/IP参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="1041.html">
+            
+                <a href="1041.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1.1" data-path="1122.html">
+            
+                <a href="1122.html">
+            
+                    
+                    DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.2" data-path="1123.html">
+            
+                <a href="1123.html">
+            
+                    
+                    WWW服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.3" data-path="1124.html">
+            
+                <a href="1124.html">
+            
+                    
+                    E-mail服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.4" data-path="1125.html">
+            
+                <a href="1125.html">
+            
+                    
+                    FTP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.5" data-path="1126.html">
+            
+                <a href="1126.html">
+            
+                    
+                    远程终端服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.6" data-path="1127.html">
+            
+                <a href="1127.html">
+            
+                    
+                    DHCP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.7" data-path="1128.html">
+            
+                <a href="1128.html">
+            
+                    
+                    网络应用编程接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1" data-path="1096.html">
+            
+                <a href="1096.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.1" data-path="1107.html">
+            
+                <a href="1107.html">
+            
+                    
+                    TCP报文格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.2" data-path="1108.html">
+            
+                <a href="1108.html">
+            
+                    
+                    TCP连接的建立与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.3" data-path="1109.html">
+            
+                <a href="1109.html">
+            
+                    
+                    TCP可靠传输的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.4" data-path="1120.html">
+            
+                <a href="1120.html">
+            
+                    
+                    TCP流量控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.5" data-path="1121.html">
+            
+                <a href="1121.html">
+            
+                    
+                    TCP拥塞控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.2" data-path="1076.html">
+            
+                <a href="1076.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="1043.html">
+            
+                <a href="1043.html">
+            
+                    
+                    网际层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1" data-path="1072.html">
+            
+                <a href="1072.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.2.3.1.1" data-path="1073.html">
+            
+                <a href="1073.html">
+            
+                    
+                    IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2" data-path="1074.html">
+            
+                <a href="1074.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2.1" data-path="1075.html">
+            
+                <a href="1075.html">
+            
+                    
+                    IP数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3" data-path="1077.html">
+            
+                <a href="1077.html">
+            
+                    
+                    子网划分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.1" data-path="1078.html">
+            
+                <a href="1078.html">
+            
+                    
+                    子网掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.2" data-path="1079.html">
+            
+                <a href="1079.html">
+            
+                    
+                    无类别域间路由地址（CIDR）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.4" data-path="1080.html">
+            
+                <a href="1080.html">
+            
+                    
+                    网络地址转换（NAT）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.2" data-path="1081.html">
+            
+                <a href="1081.html">
+            
+                    
+                    ARP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.3" data-path="1082.html">
+            
+                <a href="1082.html">
+            
+                    
+                    ICMP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4" data-path="1083.html">
+            
+                <a href="1083.html">
+            
+                    
+                    IP路由与路由协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.1" data-path="1069.html">
+            
+                <a href="1069.html">
+            
+                    
+                    RIP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.2" data-path="1070.html">
+            
+                <a href="1070.html">
+            
+                    
+                    OSPF路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.3" data-path="1071.html">
+            
+                <a href="1071.html">
+            
+                    
+                    BGP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="1044.html">
+            
+                <a href="1044.html">
+            
+                    
+                    网络接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="1045.html">
+            
+                <a href="1045.html">
+            
+                    
+                    ISO/OSI参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="1046.html">
+            
+                <a href="1046.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="1047.html">
+            
+                <a href="1047.html">
+            
+                    
+                    表示层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="1048.html">
+            
+                <a href="1048.html">
+            
+                    
+                    会话层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="1049.html">
+            
+                <a href="1049.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.4.1" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    TCP/IP传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="1050.html">
+            
+                <a href="1050.html">
+            
+                    
+                    网络层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.5.1" data-path="1068.html">
+            
+                <a href="1068.html">
+            
+                    
+                    提供的服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6" data-path="1051.html">
+            
+                <a href="1051.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.1" data-path="1057.html">
+            
+                <a href="1057.html">
+            
+                    
+                    链路与数据链路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.2" data-path="1058.html">
+            
+                <a href="1058.html">
+            
+                    
+                    点到点链路与广播链路
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.2.1" data-path="1064.html">
+            
+                <a href="1064.html">
+            
+                    
+                    点到点链路的数据链路层协议PPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.3" data-path="1059.html">
+            
+                <a href="1059.html">
+            
+                    
+                    简化模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4" data-path="1060.html">
+            
+                <a href="1060.html">
+            
+                    
+                    需要解决的基本问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.1" data-path="1061.html">
+            
+                <a href="1061.html">
+            
+                    
+                    数据帧定界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.2" data-path="1062.html">
+            
+                <a href="1062.html">
+            
+                    
+                    透明传输
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.3" data-path="1063.html">
+            
+                <a href="1063.html">
+            
+                    
+                    差错检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.5" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7" data-path="1052.html">
+            
+                <a href="1052.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.1" data-path="1022.html">
+            
+                <a href="1022.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2" data-path="1023.html">
+            
+                <a href="1023.html">
+            
+                    
+                    通信基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.1" data-path="1100.html">
+            
+                <a href="1100.html">
+            
+                    
+                    数据和信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.2" data-path="1101.html">
+            
+                <a href="1101.html">
+            
+                    
+                    信道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.3" data-path="1102.html">
+            
+                <a href="1102.html">
+            
+                    
+                    奈奎斯特准则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.4" data-path="1103.html">
+            
+                <a href="1103.html">
+            
+                    
+                    香农公式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.5" data-path="1104.html">
+            
+                <a href="1104.html">
+            
+                    
+                    多路复用技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.3" data-path="1105.html">
+            
+                <a href="1105.html">
+            
+                    
+                    接入网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="1065.html">
+            
+                <a href="1065.html">
+            
+                    
+                    局域网概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="1066.html">
+            
+                <a href="1066.html">
+            
+                    
+                    以太网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="1067.html">
+            
+                <a href="1067.html">
+            
+                    
+                    虚拟局域网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1084.html">
+            
+                <a href="1084.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1085.html">
+            
+                <a href="1085.html">
+            
+                    
+                    Wireshark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="1129.html">
+            
+                <a href="1129.html">
+            
+                    
+                    Cisco Packet Tracer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="1098.html">
+            
+                <a href="1098.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="1097.html">
+            
+                <a href="1097.html">
+            
+                    
+                    C类地址子网划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1086.html">
+            
+                <a href="1086.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="1088.html">
+            
+                <a href="1088.html">
+            
+                    
+                    ipconfig&ifconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="1089.html">
+            
+                <a href="1089.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="1090.html">
+            
+                <a href="1090.html">
+            
+                    
+                    netstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="1091.html">
+            
+                <a href="1091.html">
+            
+                    
+                    ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="1092.html">
+            
+                <a href="1092.html">
+            
+                    
+                    route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="1093.html">
+            
+                <a href="1093.html">
+            
+                    
+                    tracert&tracerote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="1094.html">
+            
+                <a href="1094.html">
+            
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="1095.html">
+            
+                <a href="1095.html">
+            
+                    
+                    tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1999.html">
+            
+                <a href="1999.html">
+            
+                    
+                    end1130
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >IP地址</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ip&#x5730;&#x5740;">IP&#x5730;&#x5740;</h1>
+<h2 id="ip&#x5730;&#x5740;&#x6982;&#x8FF0;">IP&#x5730;&#x5740;&#x6982;&#x8FF0;</h2>
+<h3 id="ip&#x5730;&#x5740;&#x5B9A;&#x4E49;">IP&#x5730;&#x5740;&#x5B9A;&#x4E49;</h3>
+<p>IP &#x5730;&#x5740;&#x5C31;&#x662F;&#x7ED9;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x5728;&#x56E0;&#x7279;&#x7F51;&#x4E0A;&#x7684;&#x4E3B;&#x673A;&#xFF08;&#x6216;&#x8DEF;&#x7531;&#x5668;&#xFF09;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5728;&#x5168;&#x4E16;&#x754C;&#x8303;&#x56F4;&#x5185;&#x60DF;&#x4E00;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p>IP &#x5730;&#x5740;&#x73B0;&#x5728;&#x7531;&#x56E0;&#x7279;&#x7F51;&#x540D;&#x5B57;&#x4E0E;&#x53F7;&#x7801;&#x5206;&#x914D;&#x673A;&#x6784;&#xFF08;Internet Corporation for Assigned Names and Numbers &#xFF0C;ICANN&#xFF09;&#x8FDB;&#x884C;&#x5206;&#x914D;&#x3002;</p>
+<p>&#x6839;&#x636E;IP&#x5730;&#x5740;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x540C;&#xFF0C;IP&#x5730;&#x5740;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x79CD;&#x7248;&#x672C;&#xFF1A;&#x4E00;&#x662F;IPv4&#xFF0C;&#x957F;&#x5EA6;&#x4E3A;32bit&#xFF1B;&#x4E8C;&#x662F;IPv6&#xFF0C;&#x957F;&#x5EA6;&#x4E3A;128bit&#x3002;</p>
+<h3 id="ip-&#x5730;&#x5740;&#x7684;&#x7F16;&#x5740;&#x65B9;&#x6CD5;">IP &#x5730;&#x5740;&#x7684;&#x7F16;&#x5740;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>&#x5206;&#x7C7B;&#x7684;IP&#x5730;&#x5740;<ul>
+<li>&#x6700;&#x57FA;&#x672C;&#x7684;&#x7F16;&#x5740;&#x65B9;&#x6CD5;&#xFF0C;&#x5728; 1981 &#x5E74;&#x901A;&#x8FC7;&#x4E86;&#x76F8;&#x5E94;&#x7684;&#x6807;&#x51C6;&#x534F;&#x8BAE;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5B50;&#x7F51;&#x5730;&#x5740;<ul>
+<li>&#x5BF9;&#x6700;&#x57FA;&#x672C;&#x7F16;&#x5740;&#x65B9;&#x6CD5;&#x7684;&#x6539;&#x8FDB;&#xFF0C;&#x5176;&#x6807;&#x51C6;[RFC 950]&#x5728; 1985 &#x5E74;&#x901A;&#x8FC7;&#x3002;</li>
+</ul>
+</li>
+<li>&#x8D85;&#x7F51;&#xFF08;CIDR&#x5730;&#x5740;&#xFF09;<ul>
+<li>&#x6BD4;&#x8F83;&#x65B0;&#x7684;&#x65E0;&#x5206;&#x7C7B;&#x7F16;&#x5740;&#x65B9;&#x6CD5;&#xFF0C;1993 &#x5E74;&#x63D0;&#x51FA;&#x540E;&#x5F88;&#x5FEB;&#x5F97;&#x5230;&#x63A8;&#x5E7F;&#x5E94;&#x7528;&#x3002;</li>
+</ul>
+</li>
+<li>IPv6<ul>
+<li>128bit&#x7684;&#x5730;&#x5740;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="ip&#x5730;&#x5740;&#x7F16;&#x5236;&#x65B9;&#x6848;&#x7684;&#x6F14;&#x53D8;&#x8FC7;&#x7A0B;">IP&#x5730;&#x5740;&#x7F16;&#x5236;&#x65B9;&#x6848;&#x7684;&#x6F14;&#x53D8;&#x8FC7;&#x7A0B;</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191022080801.png" alt=""></p>
+<h3 id="ip&#x5730;&#x5740;&#x7684;&#x7EC4;&#x6210;">IP&#x5730;&#x5740;&#x7684;&#x7EC4;&#x6210;</h3>
+<h4 id="ipv4">IPv4</h4>
+<p>&#x76EE;&#x524D;&#x4F7F;&#x7528;&#x7684;IPv4&#x662F;&#x7531;32bit&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;8&#x4F4D;&#x4E3A;&#x4E00;&#x7EC4;&#xFF0C;&#x4E2D;&#x95F4;&#x91C7;&#x7528;&#x70B9;&#x201D;.&#x201D;&#x9694;&#x5F00;&#xFF0C;&#x5206;&#x522B;&#x5F62;&#x6210;IP&#x5730;&#x5740;&#x7684;&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x548C;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x90E8;&#x5206;&#x3002;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x8BB0;&#x5FC6;&#xFF0C;&#x4E00;&#x822C;&#x91C7;&#x7528;&#x70B9;&#x5206;&#x5341;&#x8FDB;&#x5236;&#x8BB0;&#x6CD5; &#x3002;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191022080926.png" alt=""></p>
+<p>&#x70B9;&#x5206;&#x5341;&#x8FDB;&#x5236;&#x6807;&#x8BB0;&#x6CD5;&#xFF1A;&#x5C06;32Bit&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x8F6C;&#x6362;&#x6210;4&#x4E2A;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x503C;&#xFF0C;&#x6BCF;&#x4E2A;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;255&#xFF0C;4&#x4E2A;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x95F4;&#x7528;&#x201C;.&#x201D;&#x9694;&#x5F00;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191022081303.png" alt=""></p>
+<p>&#x4F8B;&#x5B50;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191105210234.png" alt=""></p>
+<p>&#x4E8C;&#x8FDB;&#x5236;IP&#x5730;&#x5740;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191105210253.png" alt="">&#x7528;&#x70B9;&#x5206;&#x5341;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x6CD5;&#x8868;&#x793A;&#x6210;        </p>
+<p>202.93.120.44    </p>
+<h4 id="ipv6">IPv6</h4>
+<p>IPv6&#x662F;&#x7531;128bit&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;16&#x4F4D;&#x4E3A;&#x4E00;&#x7EC4;&#xFF0C;&#x4E2D;&#x95F4;&#x91C7;&#x7528;&#x70B9;&#x201D;&#xFF1A;&#x201D;&#x9694;&#x5F00;&#x3002;&#x4E3A;&#x4FBF;&#x4E8E;&#x8BB0;&#x5FC6;&#xFF0C;&#x4E00;&#x822C;&#x91C7;&#x7528;&#x5192;&#x5206;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x8BB0;&#x6CD5;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x5982;&#xFF1A;68E6:8C64:FFFF:FFFF:0:1180:960A:FFF8</p>
+<p>IPv6&#x4E5F;&#x6709;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A;&#x53EF;&#x53D8;&#x957F;&#x5EA6;&#x7684;&#x7C7B;&#x578B;&#x524D;&#x7F00;&#x548C;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x3002;</p>
+<h2 id="ipv4">IPv4</h2>
+<h3 id="ip&#x5730;&#x5740;&#x7684;&#x5206;&#x7C7B;">IP&#x5730;&#x5740;&#x7684;&#x5206;&#x7C7B;</h3>
+<p>&#x6839;&#x636E;RFC1166&#x7684;&#x8BF4;&#x660E;&#xFF0C;IPv4&#x7684;&#x5730;&#x5740;&#x4E3B;&#x8981;&#x5206;&#x4E3A;5&#x7C7B;</p>
+<ul>
+<li>A&#x7C7B;&#x5730;&#x5740;1&#xFF5E;126<ul>
+<li>&#x7528;&#x4E8E;&#x4E3B;&#x673A;&#x6570;&#x76EE;&#x975E;&#x5E38;&#x591A;&#x7684;&#x5927;&#x578B;&#x6216;&#x7279;&#x5927;&#x578B;&#x7F51;&#x7EDC;&#x3002;</li>
+</ul>
+</li>
+<li>B&#x7C7B;&#x5730;&#x5740;128 &#xFF5E; 191<ul>
+<li>&#x7528;&#x4E8E;&#x4E2D;&#x578B;&#x5230;&#x5927;&#x578B;&#x7F51;&#x7EDC;&#x3002;</li>
+</ul>
+</li>
+<li>C&#x7C7B;&#x5730;&#x5740;192 &#xFF5E; 223<ul>
+<li>&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5C40;&#x57DF;&#x7F51;&#x3002;</li>
+</ul>
+</li>
+<li>D&#x7C7B;&#x5730;&#x5740;224 &#xFF5E; 239<ul>
+<li>&#x7528;&#x4F5C;&#x591A;&#x76EE;&#x5E7F;&#x64AD;&#xFF0C;&#x591A;&#x5740;&#x53D1;&#x9001;&#x3002;</li>
+</ul>
+</li>
+<li>E&#x7C7B;&#x5730;&#x5740;240 &#xFF5E; 255<ul>
+<li>&#x4FDD;&#x7559;&#x672A;&#x7528;&#xFF08;&#x4F5C;&#x4E3A;&#x5B9E;&#x9A8C;&#x5730;&#x5740;&#xFF09;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5206;&#x7C7B;ip&#x5730;&#x5740;&#x7684;&#x7279;&#x5F81;">&#x5206;&#x7C7B;IP&#x5730;&#x5740;&#x7684;&#x7279;&#x5F81;</h3>
+<p>IP&#x5730;&#x5740; ::= { &lt;&#x7F51;&#x7EDC;&#x53F7;&gt;, &lt;&#x4E3B;&#x673A;&#x53F7;&gt;}</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191223144150.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>&#x6839;&#x636E;&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x4E2D;&#x7B2C;&#x4E00;&#x5B57;&#x8282;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#xFF0C;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;IP&#x5730;&#x5740;&#x6240;&#x5C5E;&#x7684;&#x7C7B;&#x522B;</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A&#x7C7B;</td>
+<td>0 + NETid&#xFF08;7&#x4F4D;&#xFF09;0-127</td>
+<td>HOSTid&#xFF08;24&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td>B&#x7C7B;</td>
+<td>1  0 + NETid&#xFF08;14&#x4F4D;&#xFF09;128-191</td>
+<td>HOSTid&#xFF08;16&#x4F4D;&#xFF09;</td>
+</tr>
+<tr>
+<td>C&#x7C7B;</td>
+<td>1  1  0 + NETid&#xFF08;21&#x4F4D;&#xFF09;192-233</td>
+<td>HOSTid(8&#x4F4D;)</td>
+</tr>
+<tr>
+<td>D&#x7C7B;</td>
+<td>1  1  1  0 + &#x591A;&#x76EE;&#x53D1;&#x9001;&#x5730;&#x5740;&#xFF08;28&#x4F4D;&#xFF09;224 &#xFF5E; 239</td>
+<td></td>
+</tr>
+<tr>
+<td>E&#x7C7B;</td>
+<td>1  1  1  1  0   240 &#xFF5E; 255</td>
+<td>&#x4FDD;&#x7559;&#x672A;&#x7528;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ipv4&#x5730;&#x5740;&#x7684;&#x4F7F;&#x7528;&#x8303;&#x56F4;">IPv4&#x5730;&#x5740;&#x7684;&#x4F7F;&#x7528;&#x8303;&#x56F4;</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20191223145130.png" alt=""></p>
+<h3 id="ip&#x5730;&#x5740;&#x7684;&#x5B9A;&#x5740;&#x51C6;&#x5219;">IP&#x5730;&#x5740;&#x7684;&#x5B9A;&#x5740;&#x51C6;&#x5219;</h3>
+<ul>
+<li>&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x5728;INTERNET&#x4E2D;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x5728;&#x76F8;&#x540C;&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x4E5F;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;</li>
+<li>&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x4E0D;&#x80FD;&#x662F;127&#xFF0C;&#x56E0;&#x4E3A;127&#x5730;&#x5740;&#x7528;&#x4F5C;&#x672C;&#x5730;&#x56DE;&#x9001;&#x5730;&#x5740;<ul>
+<li>&#x4E3A;&#x6BCF;&#x53F0;&#x4E3B;&#x673A;&#x672C;&#x5730;&#x6240;&#x6709;&#xFF0C;&#x4EC5;&#x4EE3;&#x8868;&#x672C;&#x5730;&#x4E3B;&#x673A;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x6765;&#x5206;&#x914D;&#x3002;</li>
+<li>&#x4E00;&#x822C;&#x4F7F;&#x7528;127.0.0.1&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x3002;</li>
+<li>&#x542B;&#x6709;&#x7F51;&#x7EDC;&#x53F7;127&#x7684;&#x6570;&#x636E;&#x62A5;&#x4E0D;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x3002;</li>
+</ul>
+</li>
+<li>&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x90E8;&#x5206;&#x548C;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x90E8;&#x5206;&#x7684;&#x6BCF;&#x4E00;&#x4F4D;&#xFF08;Bit&#xFF09;&#x4E0D;&#x80FD;&#x5168;&#x4E3A;0&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x5168;&#x4E3A;1<ul>
+<li>&#x7F51;&#x7EDC;&#x5730;&#x5740;<ul>
+<li>&#x5168;&#x4E3A;0&#xFF0C;&#x8BE5;&#x5730;&#x5740;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#xFF08;this&#xFF09;&#xFF0C;&#x4E0D;&#x80FD;&#x4F20;&#x9001;<ul>
+<li>&#x5982;&#xFF1A;192.168.0.3&#x4E3A;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x3002;&#x800C;0.0.0.3&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#xFF08;&#x6CDB;&#x6307;&#xFF09;&#x4E2D;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x4E3A;3&#x7684;&#x8FD9;&#x53F0;&#x4E3B;&#x673A;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5168;&#x4E3A;1( 255)&#xFF0C;&#x5E7F;&#x64AD;&#x5730;&#x5740;&#xFF08;all&#xFF09;<ul>
+<li>&#x5982;&#xFF1A;255.255.255.255&#x7528;&#x4E8E;&#x672C;&#x7F51;&#x5E7F;&#x64AD;&#xFF0C;&#x4E5F;&#x53EB;&#x6709;&#x9650;&#x5E7F;&#x64AD;&#x3002;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x4E3B;&#x673A;&#x5730;&#x5740;<ul>
+<li>&#x5168;&#x4E3A;0 &#xFF0C;&#x4EE3;&#x8868;&#x6574;&#x4E2A;&#x7F51;&#x7EDC;&#xFF0C;&#x5373;&#x4E3B;&#x673A;&#x6240;&#x8FDE;&#x63A5;&#x7684;&#x7F51;&#x7EDC;&#x5730;&#x5740;<ul>
+<li>&#x5982;192.168.0.3&#x5BF9;&#x5E94;&#x7684;&#x7F51;&#x7EDC;&#x4E3A;192.168.0.0</li>
+</ul>
+</li>
+<li>&#x5168;&#x4E3A;1( 255) &#xFF0C;&#x5E7F;&#x64AD;&#x5730;&#x5740;&#xFF0C;&#x4EE3;&#x8868;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x4E3B;&#x673A;<ul>
+<li>&#x5982;192.168.0.255&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5728;&#x7F51;&#x7EDC;192.168.0&#x4E0A;&#x7684;&#x6240;&#x6709;&#x4E3B;&#x673A;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x53EF;&#x5206;&#x914D;ip&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;&#x65B9;&#x6CD5;">&#x53EF;&#x5206;&#x914D;IP&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20200115191421.png" alt="img"></p>
+</li>
+</ul>
+<h3 id="ip&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;&#x65B9;&#x6848;">IP&#x5730;&#x5740;&#x7684;&#x5206;&#x914D;&#x65B9;&#x6848;</h3>
+<ul>
+<li><p>RFC1466&#xFF08;&#x516C;&#x5171;&#x7F51;IP&#x5730;&#x5740;&#x5206;&#x914D;&#xFF09;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20200115191422.png" alt="img"></p>
+</li>
+<li><p>RFC1918&#xFF08;&#x4E13;&#x7528;&#x7F51;IP&#x5730;&#x5740;&#x5206;&#x914D;&#xFF09;</p>
+<ul>
+<li>IP&#x5730;&#x5740;<ul>
+<li>&#x5168;&#x5C40;&#xFF08;&#x516C;&#x5171;&#xFF09;IP&#x5730;&#x5740;&#x2015;&#x2015;&#x2015;&#x516C;&#x5171;&#x4E3B;&#x673A;</li>
+<li>&#x672C;&#x5730;&#xFF08;&#x4E13;&#x7528;&#xFF09;IP&#x5730;&#x5740;&#x2015;&#x2015;&#x2015;&#x672C;&#x5730;&#x4E3B;&#x673A;</li>
+</ul>
+</li>
+<li>RFC1918&#x5B9A;&#x4E49;&#x7684;&#x4E13;&#x7528;IP&#x5730;&#x5740;&#x5982;&#x4E0B;&#xFF1A;<ul>
+<li>10.0.0.0      &#xFF0D;10.255.255.255       1&#x4E2A;A&#x7C7B;&#x5730;&#x5740;</li>
+<li>172.16.0.0  &#xFF0D;172.31.255.255       16&#x4E2A;&#x8FDE;&#x7EED;&#x7684;B&#x7C7B;&#x5730;&#x5740;</li>
+<li>192.168.0.0&#xFF0D;192.168.255.255     256&#x4E2A;&#x8FDE;&#x7EED;&#x7684;C&#x7C7B;&#x5730;&#x5740;</li>
+</ul>
+</li>
+<li>&#x81EA;&#x52A8;&#x4E13;&#x7528;IP&#x5730;&#x5740;&#xFF08;APIPA&#xFF09;<ul>
+<li>169.254.0.1-169.254.255.254      &#x5355;&#x4E2A;&#x5B50;&#x7F51;&#x81EA;&#x52A8;&#x914D;&#x7F6E;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ip&#x5206;&#x914D;&#x9700;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;">IP&#x5206;&#x914D;&#x9700;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;</h3>
+<ul>
+<li>&#x5C0F;&#x578B;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;C&#x7C7B;&#x5730;&#x5740;&#xFF0C;&#x4E2D;&#x578B;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;B&#x7C7B;&#x5730;&#x5740;&#xFF0C;&#x5927;&#x578B;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;A&#x7C7B;&#x5730;&#x5740;</li>
+<li>&#x4E3B;&#x673A;<ul>
+<li>&#x8FDE;&#x63A5;&#x5230;&#x540C;&#x4E00;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x4E3B;&#x673A;&#x7684;IP&#x5730;&#x5740;&#x5171;&#x4EAB;&#x540C;&#x4E00;netid</li>
+</ul>
+</li>
+<li>&#x8DEF;&#x7531;&#x5668;<ul>
+<li>&#x8DEF;&#x7531;&#x5668;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x591A;&#x4E2A;&#x7269;&#x7406;&#x7F51;&#x7EDC;</li>
+<li>&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x90FD;&#x62E5;&#x6709;&#x81EA;&#x5DF1;&#x7684;IP&#x5730;&#x5740;</li>
+<li>&#x6BCF;&#x4E2A;IP&#x5730;&#x5740;&#x7684;netid&#x5E94;&#x4E0E;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;&#x7684;netid&#x76F8;&#x540C;</li>
+</ul>
+</li>
+</ul>
+<h3 id="ip&#x5730;&#x5740;&#x7684;&#x89C4;&#x5212;">IP&#x5730;&#x5740;&#x7684;&#x89C4;&#x5212;</h3>
+<p>&#x901A;&#x5E38;IP&#x5730;&#x5740;&#x7684;&#x89C4;&#x5212;&#x53EF;&#x53C2;&#x7167;&#x4E0B;&#x9762;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#xFF1A;</p>
+<ul>
+<li><p>&#xFF08;1&#xFF09;&#x5206;&#x6790;&#x7F51;&#x7EDC;&#x89C4;&#x6A21;&#xFF0C;&#x660E;&#x786E;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x62E5;&#x6709;&#x7684;&#x7F51;&#x6BB5;&#x6570;&#x91CF;&#x4EE5;&#x53CA;&#x6BCF;&#x4E2A;&#x7F51;&#x6BB5;&#x4E2D;&#x53EF;&#x80FD;&#x62E5;&#x6709;&#x7684;&#x6700;&#x5927;&#x4E3B;&#x673A;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#xFF08;2&#xFF09;&#x6839;&#x636E;&#x7F51;&#x7EDC;&#x89C4;&#x6A21;&#x786E;&#x5B9A;&#x6240;&#x9700;&#x8981;&#x7684;&#x7F51;&#x7EDC;&#x7C7B;&#x522B;&#x548C;&#x6BCF;&#x7C7B;&#x7F51;&#x7EDC;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#xFF08;3&#xFF09;&#x786E;&#x5B9A;&#x4F7F;&#x7528;&#x516C;&#x7528;&#x5730;&#x5740;&#x3001;&#x79C1;&#x6709;&#x5730;&#x5740;&#x8FD8;&#x662F;&#x4E24;&#x8005;&#x6DF7;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#xFF08;4&#xFF09;&#x6839;&#x636E;&#x53EF;&#x7528;&#x7684;&#x5730;&#x5740;&#x8D44;&#x6E90;&#x4E3A;&#x6BCF;&#x53F0;&#x4E3B;&#x673A;&#x6307;&#x5B9A;IP&#x5730;&#x5740;&#x5E76;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5728;&#x914D;&#x7F6E;&#x5730;&#x5740;&#x4E4B;&#x524D;&#xFF0C;&#x8FD8;&#x8981;&#x8003;&#x8651;&#x5730;&#x5740;&#x5206;&#x914D;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#xFF08;&#x9759;&#x6001;&#x5206;&#x914D;&#x3001;&#x52A8;&#x6001;&#x5206;&#x914D;&#xFF09;</p>
+</li>
+</ul>
+<p>&#x7F16;&#x5740;&#x5B9E;&#x4F8B;&#xFF08;3&#x4E2A;C&#x7C7B;&#x5730;&#x5740;&#xFF0C;&#x4E00;&#x4E2A;B&#x7C7B;&#x5730;&#x5740;&#xFF09;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ZanderZhao/img20/file/20200115191423.png" alt="img"></p>
+<table>
+<thead>
+<tr>
+<th>IP&#x5730;&#x5740;</th>
+<th>200.198.3.15</th>
+<th>130.201.5.18</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7F51;&#x7EDC;&#x5730;&#x5740;</td>
+<td>200.198.3.0</td>
+<td>130.201.0.0</td>
+</tr>
+<tr>
+<td>&#x8BE5;&#x7F51;&#x7EDC;&#x7684;&#x76F4;&#x63A5;&#x5E7F;&#x64AD;&#x5730;&#x5740;</td>
+<td>200.198.3.255</td>
+<td>130.201.255.255</td>
+</tr>
+<tr>
+<td>&#x6709;&#x9650;&#x5E7F;&#x64AD;&#x5730;&#x5740;</td>
+<td>255.255.255.255</td>
+<td>255.255.255.255</td>
+</tr>
+<tr>
+<td>&#x56DE;&#x9001;&#x5730;&#x5740;</td>
+<td>127.0.0.1</td>
+<td>127.0.0.1</td>
+</tr>
+</tbody>
+</table>
+<div id="gitalk-container"></div> 
+
+<p><footer class="page-footer"><span class="copyright">&#x8F6C;&#x8F7D;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#xA9; Zander Zhao All Right Reserved; Powered By Gitbook</span><span class="footer-modification"><span id="busuanzi_container_page_pv">&#x672C;&#x6587;&#x603B;&#x9605;&#x8BFB;&#x91CF;<span id="busuanzi_value_page_pv"></span>&#x6B21;</span>; &#x6700;&#x65B0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-01-17 14:45:08
+</span></footer><script async src="//cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/busuanzi.pure.mini.js"></script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1072.html" class="navigation navigation-prev " aria-label="Previous page: IP协议">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1074.html" class="navigation navigation-next " aria-label="Next page: IP协议">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IP地址","level":"1.3.1.2.3.1.1","depth":6,"next":{"title":"IP协议","level":"1.3.1.2.3.1.2","depth":6,"path":"books/1074.md","ref":"books/1074.md","articles":[{"title":"IP数据报","level":"1.3.1.2.3.1.2.1","depth":7,"path":"books/1075.md","ref":"books/1075.md","articles":[]}]},"previous":{"title":"IP协议","level":"1.3.1.2.3.1","depth":5,"path":"books/1072.md","ref":"books/1072.md","articles":[{"title":"IP地址","level":"1.3.1.2.3.1.1","depth":6,"path":"books/1073.md","ref":"books/1073.md","articles":[]},{"title":"IP协议","level":"1.3.1.2.3.1.2","depth":6,"path":"books/1074.md","ref":"books/1074.md","articles":[{"title":"IP数据报","level":"1.3.1.2.3.1.2.1","depth":7,"path":"books/1075.md","ref":"books/1075.md","articles":[]}]},{"title":"子网划分","level":"1.3.1.2.3.1.3","depth":6,"path":"books/1077.md","ref":"books/1077.md","articles":[{"title":"子网掩码","level":"1.3.1.2.3.1.3.1","depth":7,"path":"books/1078.md","ref":"books/1078.md","articles":[]},{"title":"无类别域间路由地址（CIDR）","level":"1.3.1.2.3.1.3.2","depth":7,"path":"books/1079.md","ref":"books/1079.md","articles":[]}]},{"title":"网络地址转换（NAT）","level":"1.3.1.2.3.1.4","depth":6,"path":"books/1080.md","ref":"books/1080.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","donate@git+https://github.com/plugins-zander/gitbook-plugin-donate.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","tbfed-pagefooter@git+https://github.com/plugins-zander/gitbook-plugin-tbfed-pagefooter.git","todo@git+https://github.com/plugins-zander/gitbook-plugin-todo.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"转载注明出处 &copy Zander Zhao","modify_bszlabel":"<span id=\"busuanzi_container_page_pv\">本文总阅读量<span id=\"busuanzi_value_page_pv\"></span>次</span>","modify_label":"最新修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"todo":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"donate":{"alipay":"https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/wechat.jpg","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://zlogs.net/learn-computer-networks/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"编辑本页","base":"https://github.com/ZanderZhao/learn-computer-networks/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-computer-networks","language":"zh-hans","links":{"sidebar":{"# 博客":"https://zlogs.net","# 总目录":"https://zlogs.net/learn-books"}},"gitbook":"3.2.3","description":"learn-computer-networks - Zander's Learn Book"},"file":{"path":"books/1073.md","mtime":"2020-01-17T14:45:08.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-17T14:46:17.446Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
