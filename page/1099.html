@@ -1,0 +1,2222 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VLAN实验 · learn-computer-networks</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1084.html" />
+    
+    
+    <link rel="prev" href="1067.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1010.html">
+            
+                <a href="1010.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1011.html">
+            
+                <a href="1011.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1012.html">
+            
+                <a href="1012.html">
+            
+                    
+                    定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1013.html">
+            
+                <a href="1013.html">
+            
+                    
+                    发展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="1034.html">
+            
+                <a href="1034.html">
+            
+                    
+                    功能应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="1014.html">
+            
+                <a href="1014.html">
+            
+                    
+                    组织标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1015.html">
+            
+                <a href="1015.html">
+            
+                    
+                    组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1016.html">
+            
+                <a href="1016.html">
+            
+                    
+                    硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1017.html">
+            
+                <a href="1017.html">
+            
+                    
+                    软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1030.html">
+            
+                <a href="1030.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="1032.html">
+            
+                <a href="1032.html">
+            
+                    
+                    因特网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1.1" data-path="1031.html">
+            
+                <a href="1031.html">
+            
+                    
+                    工作方式-边核
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1025.html">
+            
+                <a href="1025.html">
+            
+                    
+                    层次
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1026.html">
+            
+                <a href="1026.html">
+            
+                    
+                    资源子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1027.html">
+            
+                <a href="1027.html">
+            
+                    
+                    通讯子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1018.html">
+            
+                <a href="1018.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="1019.html">
+            
+                <a href="1019.html">
+            
+                    
+                    通信距离-局广城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="1020.html">
+            
+                <a href="1020.html">
+            
+                    
+                    使用范围-公专
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="1021.html">
+            
+                <a href="1021.html">
+            
+                    
+                    通信传播方式-点广
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="1028.html">
+            
+                <a href="1028.html">
+            
+                    
+                    拓扑结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="1055.html">
+            
+                <a href="1055.html">
+            
+                    
+                    信息交换方式-路组报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="1024.html">
+            
+                <a href="1024.html">
+            
+                    
+                    通信介质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="1053.html">
+            
+                <a href="1053.html">
+            
+                    
+                    传输带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="1054.html">
+            
+                <a href="1054.html">
+            
+                    
+                    速率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="1033.html">
+            
+                <a href="1033.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1035.html">
+            
+                <a href="1035.html">
+            
+                    
+                    衡量标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1037.html">
+            
+                <a href="1037.html">
+            
+                    
+                    体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1036.html">
+            
+                <a href="1036.html">
+            
+                    
+                    分层模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="1039.html">
+            
+                <a href="1039.html">
+            
+                    
+                    OSI模型和TCP／IP模型的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="1040.html">
+            
+                <a href="1040.html">
+            
+                    
+                    TCP/IP参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="1041.html">
+            
+                <a href="1041.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1.1" data-path="1122.html">
+            
+                <a href="1122.html">
+            
+                    
+                    DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.2" data-path="1123.html">
+            
+                <a href="1123.html">
+            
+                    
+                    WWW服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.3" data-path="1124.html">
+            
+                <a href="1124.html">
+            
+                    
+                    E-mail服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.4" data-path="1125.html">
+            
+                <a href="1125.html">
+            
+                    
+                    FTP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.5" data-path="1126.html">
+            
+                <a href="1126.html">
+            
+                    
+                    远程终端服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.6" data-path="1127.html">
+            
+                <a href="1127.html">
+            
+                    
+                    DHCP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.7" data-path="1128.html">
+            
+                <a href="1128.html">
+            
+                    
+                    网络应用编程接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1" data-path="1096.html">
+            
+                <a href="1096.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.1" data-path="1107.html">
+            
+                <a href="1107.html">
+            
+                    
+                    TCP报文格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.2" data-path="1108.html">
+            
+                <a href="1108.html">
+            
+                    
+                    TCP连接的建立与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.3" data-path="1109.html">
+            
+                <a href="1109.html">
+            
+                    
+                    TCP可靠传输的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.4" data-path="1120.html">
+            
+                <a href="1120.html">
+            
+                    
+                    TCP流量控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.5" data-path="1121.html">
+            
+                <a href="1121.html">
+            
+                    
+                    TCP拥塞控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.2" data-path="1076.html">
+            
+                <a href="1076.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="1043.html">
+            
+                <a href="1043.html">
+            
+                    
+                    网际层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1" data-path="1072.html">
+            
+                <a href="1072.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.1" data-path="1073.html">
+            
+                <a href="1073.html">
+            
+                    
+                    IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2" data-path="1074.html">
+            
+                <a href="1074.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2.1" data-path="1075.html">
+            
+                <a href="1075.html">
+            
+                    
+                    IP数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3" data-path="1077.html">
+            
+                <a href="1077.html">
+            
+                    
+                    子网划分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.1" data-path="1078.html">
+            
+                <a href="1078.html">
+            
+                    
+                    子网掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.2" data-path="1079.html">
+            
+                <a href="1079.html">
+            
+                    
+                    无类别域间路由地址（CIDR）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.4" data-path="1080.html">
+            
+                <a href="1080.html">
+            
+                    
+                    网络地址转换（NAT）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.2" data-path="1081.html">
+            
+                <a href="1081.html">
+            
+                    
+                    ARP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.3" data-path="1082.html">
+            
+                <a href="1082.html">
+            
+                    
+                    ICMP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4" data-path="1083.html">
+            
+                <a href="1083.html">
+            
+                    
+                    IP路由与路由协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.1" data-path="1069.html">
+            
+                <a href="1069.html">
+            
+                    
+                    RIP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.2" data-path="1070.html">
+            
+                <a href="1070.html">
+            
+                    
+                    OSPF路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.3" data-path="1071.html">
+            
+                <a href="1071.html">
+            
+                    
+                    BGP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="1044.html">
+            
+                <a href="1044.html">
+            
+                    
+                    网络接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="1045.html">
+            
+                <a href="1045.html">
+            
+                    
+                    ISO/OSI参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="1046.html">
+            
+                <a href="1046.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="1047.html">
+            
+                <a href="1047.html">
+            
+                    
+                    表示层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="1048.html">
+            
+                <a href="1048.html">
+            
+                    
+                    会话层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="1049.html">
+            
+                <a href="1049.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.4.1" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    TCP/IP传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="1050.html">
+            
+                <a href="1050.html">
+            
+                    
+                    网络层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.5.1" data-path="1068.html">
+            
+                <a href="1068.html">
+            
+                    
+                    提供的服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6" data-path="1051.html">
+            
+                <a href="1051.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.1" data-path="1057.html">
+            
+                <a href="1057.html">
+            
+                    
+                    链路与数据链路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.2" data-path="1058.html">
+            
+                <a href="1058.html">
+            
+                    
+                    点到点链路与广播链路
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.2.1" data-path="1064.html">
+            
+                <a href="1064.html">
+            
+                    
+                    点到点链路的数据链路层协议PPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.3" data-path="1059.html">
+            
+                <a href="1059.html">
+            
+                    
+                    简化模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4" data-path="1060.html">
+            
+                <a href="1060.html">
+            
+                    
+                    需要解决的基本问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.1" data-path="1061.html">
+            
+                <a href="1061.html">
+            
+                    
+                    数据帧定界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.2" data-path="1062.html">
+            
+                <a href="1062.html">
+            
+                    
+                    透明传输
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.3" data-path="1063.html">
+            
+                <a href="1063.html">
+            
+                    
+                    差错检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.5" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7" data-path="1052.html">
+            
+                <a href="1052.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.1" data-path="1022.html">
+            
+                <a href="1022.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2" data-path="1023.html">
+            
+                <a href="1023.html">
+            
+                    
+                    通信基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.1" data-path="1100.html">
+            
+                <a href="1100.html">
+            
+                    
+                    数据和信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.2" data-path="1101.html">
+            
+                <a href="1101.html">
+            
+                    
+                    信道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.3" data-path="1102.html">
+            
+                <a href="1102.html">
+            
+                    
+                    奈奎斯特准则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.4" data-path="1103.html">
+            
+                <a href="1103.html">
+            
+                    
+                    香农公式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.5" data-path="1104.html">
+            
+                <a href="1104.html">
+            
+                    
+                    多路复用技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.3" data-path="1105.html">
+            
+                <a href="1105.html">
+            
+                    
+                    接入网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="1065.html">
+            
+                <a href="1065.html">
+            
+                    
+                    局域网概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="1066.html">
+            
+                <a href="1066.html">
+            
+                    
+                    以太网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="1067.html">
+            
+                <a href="1067.html">
+            
+                    
+                    虚拟局域网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.2.3.1" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1084.html">
+            
+                <a href="1084.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1085.html">
+            
+                <a href="1085.html">
+            
+                    
+                    Wireshark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="1129.html">
+            
+                <a href="1129.html">
+            
+                    
+                    Cisco Packet Tracer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="1098.html">
+            
+                <a href="1098.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="1097.html">
+            
+                <a href="1097.html">
+            
+                    
+                    C类地址子网划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1086.html">
+            
+                <a href="1086.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="1088.html">
+            
+                <a href="1088.html">
+            
+                    
+                    ipconfig&ifconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="1089.html">
+            
+                <a href="1089.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="1090.html">
+            
+                <a href="1090.html">
+            
+                    
+                    netstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="1091.html">
+            
+                <a href="1091.html">
+            
+                    
+                    ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="1092.html">
+            
+                <a href="1092.html">
+            
+                    
+                    route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="1093.html">
+            
+                <a href="1093.html">
+            
+                    
+                    tracert&tracerote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="1094.html">
+            
+                <a href="1094.html">
+            
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="1095.html">
+            
+                <a href="1095.html">
+            
+                    
+                    tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1999.html">
+            
+                <a href="1999.html">
+            
+                    
+                    end1130
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >VLAN实验</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="1-&#x5B9E;&#x9A8C;&#x76EE;&#x6807;">1 &#x5B9E;&#x9A8C;&#x76EE;&#x6807;</h2>
+<p>&#xFF08;1&#xFF09;    &#x4E86;&#x89E3;VLAN&#x6280;&#x672F;&#x7684;&#x4EA7;&#x751F;&#x80CC;&#x666F;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;    &#x638C;&#x63E1;802.1q&#x7684;&#x6280;&#x672F;&#x539F;&#x7406;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;    &#x638C;&#x63E1;Access&#x548C;Trunk&#x94FE;&#x8DEF;&#x7C7B;&#x578B;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="2--&#x5B9E;&#x9A8C;&#x5185;&#x5BB9;">2  &#x5B9E;&#x9A8C;&#x5185;&#x5BB9;</h2>
+<p>&#x8BD5;&#x9A8C;&#x8BBE;&#x5907;&#xFF1A;Cisco2950&#x4EA4;&#x6362;&#x673A;</p>
+<ol>
+<li>IP&#x5730;&#x5740;&#x5206;&#x914D;</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>&#x8BBE;&#x5907;&#x540D;&#x79F0;</th>
+<th>IP&#x5730;&#x5740;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC1</td>
+<td>192.168.1.1/24</td>
+</tr>
+<tr>
+<td>PC2</td>
+<td>192.168.1.2/24</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>&#x8BBE;&#x5907;&#x540D;&#x79F0;</th>
+<th>IP&#x5730;&#x5740;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC1</td>
+<td>192.168.1.1/24</td>
+</tr>
+<tr>
+<td>PC2</td>
+<td>192.168.1.2/24</td>
+</tr>
+<tr>
+<td>PC3</td>
+<td>192.168.1.3/24</td>
+</tr>
+<tr>
+<td>PC4</td>
+<td>192.168.1.4/24</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p>&#x4EA4;&#x6362;&#x673A;Fa0/1&#x548C;Fa0/2&#x90FD;&#x914D;&#x7F6E;&#x6210;Access&#xFF1B;&#x9A8C;&#x8BC1;&#x4EA4;&#x6362;&#x673A;&#x4E0B;PC1&#x4E0E;PC2&#x5728;&#x76F8;&#x540C;VLAN&#x548C;&#x4E0D;&#x540C;VLAN&#x65F6;&#x7684;&#x8FDE;&#x901A;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x4EA4;&#x6362;&#x673A;SW1&#x548C;SW2&#x7684;Fa0/1&#x548C;Fa0/2&#x90FD;&#x914D;&#x7F6E;&#x6210;Access&#xFF0C;Fa0/24&#x914D;&#x7F6E;&#x6210;Trunk&#xFF1B;PC1&#x4E0E;PC3&#x5C5E;&#x4E8E;VLAN10&#xFF0C;PC2&#x4E0E;PC4&#x5C5E;&#x4E8E;VLAN20&#xFF1B;&#x9A8C;&#x8BC1;PC1&#x4E0E;PC3&#x7684;&#x8FDE;&#x901A;&#x6027;&#x548C;PC1&#x4E0E;PC4&#x7684;&#x8FDE;&#x901A;&#x6027;&#x3002;</p>
+</li>
+</ol>
+<h2 id="3-----&#x5B9E;&#x9A8C;&#x7ED3;&#x679C;">3     &#x5B9E;&#x9A8C;&#x7ED3;&#x679C;</h2>
+<h3 id="31-&#x5355;&#x4EA4;&#x6362;&#x673A;vlan">3.1 &#x5355;&#x4EA4;&#x6362;&#x673A;vlan</h3>
+<p>&#x672A;&#x8BBE;&#x7F6E;Vlan&#xFF0C;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;vlan1</p>
+<pre><code class="lang-bash">PC&gt;ipconfig
+
+IP Address......................: 192.168.1.1
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 0.0.0.0
+
+PC&gt;ping 192.168.1.2
+
+Pinging 192.168.1.2 with 32 bytes of data:
+
+Reply from 192.168.1.2: bytes=32 time=23ms TTL=128
+Reply from 192.168.1.2: bytes=32 time=7ms TTL=128
+Reply from 192.168.1.2: bytes=32 time=9ms TTL=128
+Reply from 192.168.1.2: bytes=32 time=4ms TTL=128
+
+Ping statistics <span class="hljs-keyword">for</span> 192.168.1.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip <span class="hljs-built_in">times</span> <span class="hljs-keyword">in</span> milli-seconds:
+    Minimum = 4ms, Maximum = 23ms, Average = 10ms
+</code></pre>
+<p>&#x5212;&#x5206;vlan</p>
+<pre><code class="lang-bash">Switch&gt;<span class="hljs-built_in">enable</span>
+Switch<span class="hljs-comment">#configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)<span class="hljs-comment">#vlan 2</span>
+Switch(config-vlan)<span class="hljs-comment">#name vlan2</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#vlan 3</span>
+Switch(config-vlan)<span class="hljs-comment">#name vlan3</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#</span>
+Switch(config)<span class="hljs-comment">#</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/1</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/3</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 3</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+</code></pre>
+<p><img src="https://img1.zlogs.net/19/20191128094034.png" alt=""></p>
+<p>&#x914D;&#x7F6E;&#x540E;&#x6D4B;&#x8BD5;</p>
+<pre><code class="lang-bash">PC&gt;ipconfig
+
+IP Address......................: 192.168.1.1
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 0.0.0.0
+
+PC&gt;ping 192.168.1.2
+
+Pinging 192.168.1.2 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics <span class="hljs-keyword">for</span> 192.168.1.2:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+</code></pre>
+<h3 id="32-&#x591A;&#x4EA4;&#x6362;&#x673A;vlan">3.2 &#x591A;&#x4EA4;&#x6362;&#x673A;vlan</h3>
+<p>&#x914D;&#x7F6E;SW1</p>
+<pre><code class="lang-bash">
+Switch&gt;<span class="hljs-built_in">enable</span>
+Switch<span class="hljs-comment">#configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)<span class="hljs-comment">#vlan 10</span>
+Switch(config-vlan)<span class="hljs-comment">#name VLAN10</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#vlan 20</span>
+Switch(config-vlan)<span class="hljs-comment">#name VLAN20</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+
+Switch(config-if)<span class="hljs-comment">#switchport mode trunk</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/4</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/4</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to up
+
+Switch(config-if)<span class="hljs-comment">#switchport mode trunk</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/1</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport mode access</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 10</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/3</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport mode access</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 20</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+</code></pre>
+<p>&#x67E5;&#x770B;SW1&#x7684;vlan&#x4FE1;&#x606F;</p>
+<pre><code class="lang-bash">Switch<span class="hljs-comment">#en</span>
+Switch<span class="hljs-comment">#enable </span>
+Switch<span class="hljs-comment">#show vlan</span>
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/5, Fa0/6, Fa0/7
+                                                Fa0/8, Fa0/9, Fa0/10, Fa0/11
+                                                Fa0/12, Fa0/13, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24
+10   VLAN10                           active    Fa0/2
+20   VLAN20                           active    Fa0/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+Switch<span class="hljs-comment">#</span>
+</code></pre>
+<p>&#x914D;&#x7F6E;SW2</p>
+<pre><code class="lang-bash">
+Switch&gt;<span class="hljs-built_in">enable</span>
+Switch<span class="hljs-comment">#configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)<span class="hljs-comment">#vlan 10</span>
+Switch(config-vlan)<span class="hljs-comment">#name VLAN10</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#vlan 20</span>
+Switch(config-vlan)<span class="hljs-comment">#name VLAN20</span>
+Switch(config-vlan)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/2</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport mode access</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 10</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/3</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport mode access</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#switchport access vlan 20</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/4</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+Switch(config-if)<span class="hljs-comment">#exit</span>
+Switch(config)<span class="hljs-comment">#interface FastEthernet0/4</span>
+Switch(config-if)<span class="hljs-comment">#</span>
+</code></pre>
+<p><img src="https://img1.zlogs.net/19/20191128094107.png" alt=""></p>
+<p>&#x6D4B;&#x8BD5;</p>
+<pre><code class="lang-bash">Packet Tracer PC Command Line 1.0
+PC&gt;ipconfig
+
+IP Address......................: 192.168.1.1
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 0.0.0.0
+
+PC&gt;ping 192.168.1.3
+
+Pinging 192.168.1.3 with 32 bytes of data:
+
+Reply from 192.168.1.3: bytes=32 time=35ms TTL=128
+Reply from 192.168.1.3: bytes=32 time=15ms TTL=128
+Reply from 192.168.1.3: bytes=32 time=14ms TTL=128
+Reply from 192.168.1.3: bytes=32 time=16ms TTL=128
+
+Ping statistics <span class="hljs-keyword">for</span> 192.168.1.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip <span class="hljs-built_in">times</span> <span class="hljs-keyword">in</span> milli-seconds:
+    Minimum = 14ms, Maximum = 35ms, Average = 20ms
+
+PC&gt;ping 192.168.1.4
+
+Pinging 192.168.1.4 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics <span class="hljs-keyword">for</span> 192.168.1.4:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+PC&gt;ping 192.168.1.2
+
+Pinging 192.168.1.2 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics <span class="hljs-keyword">for</span> 192.168.1.2:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+</code></pre>
+<h2 id="4-&#x7ED3;&#x8BBA;">4. &#x7ED3;&#x8BBA;</h2>
+<p>vlan&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x865A;&#x62DF;&#x5C40;&#x57DF;&#x7F51;&#xFF0C;&#x5904;&#x5728;&#x4E0D;&#x540C;&#x865A;&#x62DF;&#x5C40;&#x57DF;&#x7F51;&#x4E4B;&#x95F4;&#x4E0D;&#x80FD;<code>ping</code>&#x901A;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E24;&#x4E2A;&#x4EA4;&#x6362;&#x673A;&#x5212;&#x5206;&#x90E8;&#x5206;&#x76F8;&#x540C;vlan&#x5E76;&#x8FDE;&#x63A5;&#xFF0C;&#x53EF;&#x5B9E;&#x73B0;&#x91CD;&#x65B0;&#x5206;&#x5272;&#x7EC4;&#x7F51;&#x3002;</p>
+<p>Access&#x53EF;&#x4EE5;&#x6307;&#x5B9A;VLAN&#xFF0C;&#x5373;&#x4E0D;&#x540C;VLAN&#x4E4B;&#x95F4;&#x4E0D;&#x901A;&#xFF0C;Trunk&#x5141;&#x8BB8;&#x6240;&#x6709;VLAN&#x76F8;&#x901A;&#x3002;</p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1067.html" class="navigation navigation-prev " aria-label="Previous page: 虚拟局域网">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1084.html" class="navigation navigation-next " aria-label="Next page: 实验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"VLAN实验","level":"1.3.2.3.1","depth":4,"next":{"title":"实验","level":"1.4","depth":1,"path":"page/1084.md","ref":"page/1084.md","articles":[{"title":"Wireshark","level":"1.4.1","depth":2,"path":"page/1085.md","ref":"page/1085.md","articles":[]},{"title":"Cisco Packet Tracer","level":"1.4.2","depth":2,"path":"page/1129.md","ref":"page/1129.md","articles":[{"title":"基本命令","level":"1.4.2.1","depth":3,"path":"page/1098.md","ref":"page/1098.md","articles":[]}]},{"title":"VLAN实验","level":"1.4.3","depth":2,"path":"page/1099.md","ref":"page/1099.md","articles":[]},{"title":"C类地址子网划分","level":"1.4.4","depth":2,"path":"page/1097.md","ref":"page/1097.md","articles":[]}]},"previous":{"title":"虚拟局域网","level":"1.3.2.3","depth":3,"path":"page/1067.md","ref":"page/1067.md","articles":[{"title":"VLAN实验","level":"1.3.2.3.1","depth":4,"path":"page/1099.md","ref":"page/1099.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","gtag@git+https://github.com/plugins-zander/gitbook-plugin-gtag.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"sitemap-general":{"prefix":"https://zlogs.net/learn-computer-networks/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"gtag":{"token":"UA-149127400-1"},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"EDIT","base":"https://github.com/ZanderZhao/learn-computer-networks/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-computer-networks","language":"zh-hans","gitbook":"3.2.3","description":"learn-computer-networks - Zander's Learn Book"},"file":{"path":"page/1099.md","mtime":"2020-04-09T07:48:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T07:50:24.567Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gtag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

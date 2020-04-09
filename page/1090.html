@@ -1,0 +1,2775 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>netstat · learn-computer-networks</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1091.html" />
+    
+    
+    <link rel="prev" href="1089.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1010.html">
+            
+                <a href="1010.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1011.html">
+            
+                <a href="1011.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="1012.html">
+            
+                <a href="1012.html">
+            
+                    
+                    定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="1013.html">
+            
+                <a href="1013.html">
+            
+                    
+                    发展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="1034.html">
+            
+                <a href="1034.html">
+            
+                    
+                    功能应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="1014.html">
+            
+                <a href="1014.html">
+            
+                    
+                    组织标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1015.html">
+            
+                <a href="1015.html">
+            
+                    
+                    组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="1016.html">
+            
+                <a href="1016.html">
+            
+                    
+                    硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1017.html">
+            
+                <a href="1017.html">
+            
+                    
+                    软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1030.html">
+            
+                <a href="1030.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="1032.html">
+            
+                <a href="1032.html">
+            
+                    
+                    因特网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1.1" data-path="1031.html">
+            
+                <a href="1031.html">
+            
+                    
+                    工作方式-边核
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1025.html">
+            
+                <a href="1025.html">
+            
+                    
+                    层次
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="1026.html">
+            
+                <a href="1026.html">
+            
+                    
+                    资源子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="1027.html">
+            
+                <a href="1027.html">
+            
+                    
+                    通讯子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1018.html">
+            
+                <a href="1018.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="1019.html">
+            
+                <a href="1019.html">
+            
+                    
+                    通信距离-局广城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="1020.html">
+            
+                <a href="1020.html">
+            
+                    
+                    使用范围-公专
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="1021.html">
+            
+                <a href="1021.html">
+            
+                    
+                    通信传播方式-点广
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="1028.html">
+            
+                <a href="1028.html">
+            
+                    
+                    拓扑结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="1055.html">
+            
+                <a href="1055.html">
+            
+                    
+                    信息交换方式-路组报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="1024.html">
+            
+                <a href="1024.html">
+            
+                    
+                    通信介质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="1053.html">
+            
+                <a href="1053.html">
+            
+                    
+                    传输带宽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="1054.html">
+            
+                <a href="1054.html">
+            
+                    
+                    速率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="1033.html">
+            
+                <a href="1033.html">
+            
+                    
+                    拓展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1035.html">
+            
+                <a href="1035.html">
+            
+                    
+                    衡量标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1037.html">
+            
+                <a href="1037.html">
+            
+                    
+                    体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1036.html">
+            
+                <a href="1036.html">
+            
+                    
+                    分层模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="1039.html">
+            
+                <a href="1039.html">
+            
+                    
+                    OSI模型和TCP／IP模型的比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="1040.html">
+            
+                <a href="1040.html">
+            
+                    
+                    TCP/IP参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="1041.html">
+            
+                <a href="1041.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1.1" data-path="1122.html">
+            
+                <a href="1122.html">
+            
+                    
+                    DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.2" data-path="1123.html">
+            
+                <a href="1123.html">
+            
+                    
+                    WWW服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.3" data-path="1124.html">
+            
+                <a href="1124.html">
+            
+                    
+                    E-mail服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.4" data-path="1125.html">
+            
+                <a href="1125.html">
+            
+                    
+                    FTP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.5" data-path="1126.html">
+            
+                <a href="1126.html">
+            
+                    
+                    远程终端服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.6" data-path="1127.html">
+            
+                <a href="1127.html">
+            
+                    
+                    DHCP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.1.7" data-path="1128.html">
+            
+                <a href="1128.html">
+            
+                    
+                    网络应用编程接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1" data-path="1096.html">
+            
+                <a href="1096.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.1" data-path="1107.html">
+            
+                <a href="1107.html">
+            
+                    
+                    TCP报文格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.2" data-path="1108.html">
+            
+                <a href="1108.html">
+            
+                    
+                    TCP连接的建立与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.3" data-path="1109.html">
+            
+                <a href="1109.html">
+            
+                    
+                    TCP可靠传输的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.4" data-path="1120.html">
+            
+                <a href="1120.html">
+            
+                    
+                    TCP流量控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.1.5" data-path="1121.html">
+            
+                <a href="1121.html">
+            
+                    
+                    TCP拥塞控制的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2.2" data-path="1076.html">
+            
+                <a href="1076.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="1043.html">
+            
+                <a href="1043.html">
+            
+                    
+                    网际层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1" data-path="1072.html">
+            
+                <a href="1072.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.1" data-path="1073.html">
+            
+                <a href="1073.html">
+            
+                    
+                    IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2" data-path="1074.html">
+            
+                <a href="1074.html">
+            
+                    
+                    IP协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.2.1" data-path="1075.html">
+            
+                <a href="1075.html">
+            
+                    
+                    IP数据报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3" data-path="1077.html">
+            
+                <a href="1077.html">
+            
+                    
+                    子网划分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.1" data-path="1078.html">
+            
+                <a href="1078.html">
+            
+                    
+                    子网掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.3.2" data-path="1079.html">
+            
+                <a href="1079.html">
+            
+                    
+                    无类别域间路由地址（CIDR）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.1.4" data-path="1080.html">
+            
+                <a href="1080.html">
+            
+                    
+                    网络地址转换（NAT）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.2" data-path="1081.html">
+            
+                <a href="1081.html">
+            
+                    
+                    ARP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.3" data-path="1082.html">
+            
+                <a href="1082.html">
+            
+                    
+                    ICMP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4" data-path="1083.html">
+            
+                <a href="1083.html">
+            
+                    
+                    IP路由与路由协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.1" data-path="1069.html">
+            
+                <a href="1069.html">
+            
+                    
+                    RIP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.2" data-path="1070.html">
+            
+                <a href="1070.html">
+            
+                    
+                    OSPF路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3.4.3" data-path="1071.html">
+            
+                <a href="1071.html">
+            
+                    
+                    BGP路由协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="1044.html">
+            
+                <a href="1044.html">
+            
+                    
+                    网络接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="1045.html">
+            
+                <a href="1045.html">
+            
+                    
+                    ISO/OSI参考模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="1046.html">
+            
+                <a href="1046.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="1047.html">
+            
+                <a href="1047.html">
+            
+                    
+                    表示层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="1048.html">
+            
+                <a href="1048.html">
+            
+                    
+                    会话层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="1049.html">
+            
+                <a href="1049.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.4.1" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    TCP/IP传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="1050.html">
+            
+                <a href="1050.html">
+            
+                    
+                    网络层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.5.1" data-path="1068.html">
+            
+                <a href="1068.html">
+            
+                    
+                    提供的服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6" data-path="1051.html">
+            
+                <a href="1051.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.1" data-path="1057.html">
+            
+                <a href="1057.html">
+            
+                    
+                    链路与数据链路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.2" data-path="1058.html">
+            
+                <a href="1058.html">
+            
+                    
+                    点到点链路与广播链路
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.2.1" data-path="1064.html">
+            
+                <a href="1064.html">
+            
+                    
+                    点到点链路的数据链路层协议PPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.3" data-path="1059.html">
+            
+                <a href="1059.html">
+            
+                    
+                    简化模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4" data-path="1060.html">
+            
+                <a href="1060.html">
+            
+                    
+                    需要解决的基本问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.1" data-path="1061.html">
+            
+                <a href="1061.html">
+            
+                    
+                    数据帧定界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.2" data-path="1062.html">
+            
+                <a href="1062.html">
+            
+                    
+                    透明传输
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.4.3" data-path="1063.html">
+            
+                <a href="1063.html">
+            
+                    
+                    差错检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.6.5" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7" data-path="1052.html">
+            
+                <a href="1052.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.1" data-path="1022.html">
+            
+                <a href="1022.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2" data-path="1023.html">
+            
+                <a href="1023.html">
+            
+                    
+                    通信基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.1" data-path="1100.html">
+            
+                <a href="1100.html">
+            
+                    
+                    数据和信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.2" data-path="1101.html">
+            
+                <a href="1101.html">
+            
+                    
+                    信道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.3" data-path="1102.html">
+            
+                <a href="1102.html">
+            
+                    
+                    奈奎斯特准则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.4" data-path="1103.html">
+            
+                <a href="1103.html">
+            
+                    
+                    香农公式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.2.5" data-path="1104.html">
+            
+                <a href="1104.html">
+            
+                    
+                    多路复用技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.7.3" data-path="1105.html">
+            
+                <a href="1105.html">
+            
+                    
+                    接入网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    局域网体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="1065.html">
+            
+                <a href="1065.html">
+            
+                    
+                    局域网概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="1066.html">
+            
+                <a href="1066.html">
+            
+                    
+                    以太网技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="1067.html">
+            
+                <a href="1067.html">
+            
+                    
+                    虚拟局域网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1084.html">
+            
+                <a href="1084.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1085.html">
+            
+                <a href="1085.html">
+            
+                    
+                    Wireshark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="1129.html">
+            
+                <a href="1129.html">
+            
+                    
+                    Cisco Packet Tracer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="1098.html">
+            
+                <a href="1098.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="1099.html">
+            
+                <a href="1099.html">
+            
+                    
+                    VLAN实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="1097.html">
+            
+                <a href="1097.html">
+            
+                    
+                    C类地址子网划分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="1086.html">
+            
+                <a href="1086.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="1088.html">
+            
+                <a href="1088.html">
+            
+                    
+                    ipconfig&ifconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="1089.html">
+            
+                <a href="1089.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="1090.html">
+            
+                <a href="1090.html">
+            
+                    
+                    netstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="1091.html">
+            
+                <a href="1091.html">
+            
+                    
+                    ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="1092.html">
+            
+                <a href="1092.html">
+            
+                    
+                    route
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="1093.html">
+            
+                <a href="1093.html">
+            
+                    
+                    tracert&tracerote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="1094.html">
+            
+                <a href="1094.html">
+            
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="1087.html">
+            
+                <a href="1087.html">
+            
+                    
+                    arp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="1095.html">
+            
+                <a href="1095.html">
+            
+                    
+                    tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="1999.html">
+            
+                <a href="1999.html">
+            
+                    
+                    end1130
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >netstat</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="netstatlinuxwin">netstat(linux/win)</h1>
+<pre><code>&#x4E00;&#x3001;&#x529F;&#x80FD;
+      &#x8BE5;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x7684;&#x6D3B;&#x52A8;&#x8FDE;&#x63A5;&#x3002;
+&#x4E8C;&#x3001;&#x683C;&#x5F0F;
+       netstat
+</code></pre><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://zh.wikipedia.org/wiki/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F" target="_blank">&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</a></td>
+<td><a href="https://zh.wikipedia.org/wiki/Unix" target="_blank">Unix</a>&#x548C;<a href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F" target="_blank">&#x7C7B;Unix&#x7CFB;&#x7EDF;</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/IBM_OS/2" target="_blank">IBM OS/2</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/ReactOS" target="_blank">ReactOS</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>netstat</strong>&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;<a href="https://zh.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2" target="_blank">&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;</a>&#x7684;<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C" target="_blank">&#x7F51;&#x7EDC;</a><a href="https://zh.wikipedia.org/wiki/%E5%AE%9E%E7%94%A8%E7%A8%8B%E5%BA%8F" target="_blank">&#x5B9E;&#x7528;&#x5DE5;&#x5177;</a>&#xFF0C;&#x53EF;&#x663E;&#x793A;&#x5F53;&#x524D;&#x7684;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;<a href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE" target="_blank">&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;</a>&#x5C42;&#x7684;&#x8FDE;&#x7EBF;&#x72B6;&#x51B5;&#x3001;<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8" target="_blank">&#x8DEF;&#x7531;&#x8868;</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3" target="_blank">&#x7F51;&#x7EDC;&#x63A5;&#x53E3;</a>&#x72B6;&#x6001;&#x548C;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE" target="_blank">&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</a>&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7B49;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-gf-1" target="_blank">[1]</a><code>netstat</code>&#x547D;&#x4EE4;&#x9002;&#x7528;&#x4E8E;<a href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F" target="_blank">&#x7C7B;Unix&#x7CFB;&#x7EDF;</a>&#xFF08;&#x5982;<a href="https://zh.wikipedia.org/wiki/MacOS" target="_blank">macOS</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Linux" target="_blank">Linux</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Solaris" target="_blank">Solaris</a>&#x548C;<a href="https://zh.wikipedia.org/wiki/BSD" target="_blank">BSD</a>&#xFF09;&#x3001;<a href="https://zh.wikipedia.org/wiki/IBM_OS/2" target="_blank">IBM OS/2</a>&#x548C;<a href="https://zh.wikipedia.org/wiki/Windows_NT" target="_blank">Windows NT</a>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5BB6;&#x65CF;&#xFF08;&#x5982;<a href="https://zh.wikipedia.org/wiki/Windows_XP" target="_blank">Windows XP</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Windows_Vista" target="_blank">Windows Vista</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Windows_7" target="_blank">Windows 7</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Windows_8" target="_blank">Windows 8</a>&#x548C;<a href="https://zh.wikipedia.org/wiki/Windows_10" target="_blank">Windows 10</a>&#xFF09;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-windows-2" target="_blank">[2]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-twenty-3" target="_blank">[3]</a></p>
+<p><code>netstat</code>&#x53EF;&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x53EF;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F" target="_blank">&#x7F51;&#x7EDC;&#x6D41;&#x91CF;</a>&#x6765;&#x5EA6;&#x91CF;&#x7F51;&#x7EDC;&#x6027;&#x80FD;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-errors-4" target="_blank">[4]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-5" target="_blank">[5]</a>&#x5C3D;&#x7BA1;&#x8BE5;&#x5DE5;&#x5177;&#x4ECD;&#x7136;&#x88AB;&#x5305;&#x542B;&#x5728;&#x8BB8;&#x591A;<a href="https://zh.wikipedia.org/wiki/Linux%E5%8F%91%E8%A1%8C%E7%89%88" target="_blank">Linux&#x53D1;&#x884C;&#x7248;</a>&#x4E2D;&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x90FD;&#x88AB;&#x770B;&#x4F5C;&#x8FC7;&#x65F6;&#x3001;&#x5E94;&#x88AB;&#x66FF;&#x4EE3;&#x7684;&#x5DE5;&#x5177;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-6" target="_blank">[6]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_8-7" target="_blank">[7]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_guide-8" target="_blank">[8]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_foundation-9" target="_blank">[9]</a></p>
+<p>&#x5728;<a href="https://zh.wikipedia.org/wiki/Linux" target="_blank">Linux</a>&#x4E0A;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;<code>ss</code>&#x66FF;&#x4EE3;<code>netstat</code>&#xFF0C;&#x4F7F;&#x7528;<code>ip route</code>&#x66FF;&#x4EE3;<code>netstat -r</code>&#xFF0C;&#x4F7F;&#x7528;<code>ip -s link</code>&#x66FF;&#x4EE3;<code>netstat -i</code>&#xFF0C;&#x4F7F;&#x7528;<code>ip maddr</code>&#x66FF;&#x4EE3;<code>netstat -g</code>&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-10" target="_blank">[10]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-11" target="_blank">[11]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-12" target="_blank">[12]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-13" target="_blank">[13]</a></p>
+<h2 id="&#x547D;&#x4EE4;&#x53C2;&#x6570;">&#x547D;&#x4EE4;&#x53C2;&#x6570;</h2>
+<p>&#x547D;&#x4EE4;<code>netstat</code>&#x7684;<a href="https://zh.wikipedia.org/wiki/%E5%8F%83%E6%95%B8_(%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88" target="_blank">&#x53C2;&#x6570;</a>)&#x5FC5;&#x987B;&#x4EE5;<a href="https://zh.wikipedia.org/wiki/%E8%BF%9E%E5%AD%97%E7%AC%A6" target="_blank">&#x8FDE;&#x5B57;&#x7B26;</a>&#xFF08;-&#xFF09;&#x800C;&#x975E;<a href="https://zh.wikipedia.org/wiki/%E6%96%9C%E6%9D%A0" target="_blank">&#x659C;&#x6760;</a>&#xFF08;/&#xFF09;&#x4E3A;&#x524D;&#x7F00;&#x3002;&#x5E76;&#x975E;&#x6240;&#x6709;&#x5E73;&#x53F0;&#x90FD;&#x652F;&#x6301;&#x67D0;&#x4E9B;&#x53C2;&#x6570;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-gf-1" target="_blank">[1]</a></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th><a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Windows</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-windows-2" target="_blank">[2]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-ms_doc-14" target="_blank">[14]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/ReactOS" target="_blank">ReactOS</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-15" target="_blank">[15]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/MacOS" target="_blank">macOS</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-16" target="_blank">[16]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-17" target="_blank">[17]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-18" target="_blank">[18]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/BSD" target="_blank">BSD</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-19" target="_blank">[19]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/NetBSD" target="_blank">NetBSD</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-20" target="_blank">[20]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-21" target="_blank">[21]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/FreeBSD" target="_blank">FreeBSD</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-22" target="_blank">[22]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/Linux" target="_blank">Linux</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-twenty-3" target="_blank">[3]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_8-7" target="_blank">[7]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_guide-8" target="_blank">[8]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/Solaris" target="_blank">Solaris</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-23" target="_blank">[23]</a></th>
+<th><a href="https://zh.wikipedia.org/wiki/OS/2" target="_blank">OS/2</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-24" target="_blank">[24]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-ibm-25" target="_blank">[25]</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>-a</strong></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;&#x6D3B;&#x52A8;&#x4E2D;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;<a href="https://zh.wikipedia.org/wiki/%E7%94%B5%E8%84%91" target="_blank">&#x7535;&#x8111;</a>&#x6B63;&#x5728;&#x76D1;&#x542C;&#x7684;<a href="https://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8" target="_blank">TCP/UDP&#x7AEF;&#x53E3;</a>&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-b</strong></td>
+<td>&#x663E;&#x793A;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x76D1;&#x542C;<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E8%A8%8A%E5%9F%A0" target="_blank">&#x7AEF;&#x53E3;</a> &#x3002;&#xFF08;&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="https://zh.wikipedia.org/wiki/Windows_XP" target="_blank">Windows XP</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Windows_Server_2003" target="_blank">Windows Server 2003</a>&#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x7684;<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;<a href="https://zh.wikipedia.org/wiki/Windows_2000" target="_blank">Windows 2000</a>&#x6216;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x4E0D;&#x53EF;&#x7528;&#x3002;&#xFF09;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-b</strong></td>
+<td>&#x540C;<strong>-i</strong>&#xFF0C;&#x4F46;&#x8BA1;&#x7B97;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F" target="_blank">&#x7F51;&#x7EDC;&#x6D41;&#x91CF;</a>&#x7684;&#x603B;<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82" target="_blank">&#x5B57;&#x8282;</a>&#x6570;&#x3002;</td>
+<td></td>
+<td>&#x5426;</td>
+<td>&#x662F;</td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-e</strong></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E4%BB%A5%E5%A4%AA%E7%BD%91" target="_blank">&#x4EE5;&#x592A;&#x7F51;</a>&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x7684;&#x5B57;&#x8282;&#x6570;&#x53CA;<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%8C%85" target="_blank">&#x6570;&#x636E;&#x5305;</a>&#x6570;&#x3002;&#x6B64;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4E0E;<strong>-s</strong>&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-f</strong></td>
+<td>&#x663E;&#x793A;&#x5916;&#x90E8;&#x5730;&#x5740;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1" target="_blank">&#x5B8C;&#x6574;&#x7F51;&#x57DF;&#x540D;&#x79F0;</a>&#x3002;&#xFF08;&#x4EC5;&#x9002;&#x7528;&#x4E8E;<a href="https://zh.wikipedia.org/wiki/Windows_Vista" target="_blank">Windows Vista</a>&#x548C;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x7684;<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;&#xFF09;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-f</strong></td>
+<td>&#x9650;&#x5B9A;&#x663E;&#x793A;&#x4F7F;&#x7528;&#x7279;&#x5B9A;<a href="https://zh.wikipedia.org/wiki/%E5%A5%97%E6%8E%A5%E5%AD%97" target="_blank">&#x5957;&#x63A5;&#x5B57;</a>&#xFF08;unix&#x3001;inet&#x3001;inet6&#xFF09;&#x7684;&#x5730;&#x5740;&#x65CF;&#x3002;</td>
+<td></td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-g</strong></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%92%AD#IP%E5%A4%9A%E6%92%AD" target="_blank">&#x591A;&#x64AD;&#x7EC4;</a>&#x4FE1;&#x606F;&#x3002;&#xFF08;&#x53EF;&#x80FD;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x8F83;&#x65B0;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F" target="_blank">&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</a>&#x3002;&#xFF09;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-i</strong></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3" target="_blank">&#x7F51;&#x7EDC;&#x63A5;&#x53E3;</a>&#x53CA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-m</strong></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E9%9A%8F%E6%9C%BA%E5%AD%98%E5%8F%96%E5%AD%98%E5%82%A8%E5%99%A8" target="_blank">&#x968F;&#x673A;&#x5B58;&#x53D6;&#x5B58;&#x50A8;&#x5668;</a>&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-n</strong></td>
+<td>&#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4E2D;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE" target="_blank">TCP</a>&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x548C;<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E8%A8%8A%E5%9F%A0" target="_blank">&#x7AEF;&#x53E3;</a>&#x53F7;&#x4EE5;&#x6570;&#x5B57;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#xFF0C;&#x4E0D;&#x4F1A;&#x5C1D;&#x8BD5;&#x786E;&#x5B9A;&#x5B9E;&#x9645;&#x4E3B;&#x673A;&#x540D;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-o</strong></td>
+<td>&#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4E2D;&#x7684;TCP&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x5305;&#x542B;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E8%BF%9B%E7%A8%8BID" target="_blank">&#x8FDB;&#x7A0B;ID</a>&#xFF08;PID&#xFF09;&#x3002;&#x6839;&#x636E;PID&#xFF0C;&#x53EF;&#x5728;<a href="https://zh.wikipedia.org/wiki/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8_(Windows%E5%85%83%E4%BB%B6" target="_blank">Windows&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x5668;</a>)&#x7684;&#x201C;&#x8FDB;&#x7A0B;&#x201D;&#x9009;&#x9879;&#x5361;&#x4E2D;&#x627E;&#x5230;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x6B64;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4E0E;<strong>-a</strong>&#x3001;<strong>-n</strong>&#x548C;<strong>-p</strong>&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x5B89;&#x88C5;&#x4E86;Windows&#x4FEE;&#x8865;&#x7A0B;&#x5E8F;&#xFF0C;&#x5219;&#x6B64;&#x53C2;&#x6570;&#x5728;<a href="https://zh.wikipedia.org/wiki/Windows_XP" target="_blank">Windows XP</a>&#x3001;<a href="https://zh.wikipedia.org/wiki/Windows_Server_2003" target="_blank">Windows Server 2003</a>&#x548C;<a href="https://zh.wikipedia.org/wiki/Windows_2000" target="_blank">Windows 2000</a>&#x4E0A;&#x53EF;&#x7528;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-p</strong></td>
+<td>&#x663E;&#x793A;&#x4F7F;&#x7528;&#x6307;&#x5B9A;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE" target="_blank">&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</a>&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x662F;TCP&#x3001;UDP&#x3001;TCPv6&#x6216;UDPv6&#x3002;&#x5982;&#x679C;&#x6B64;&#x53C2;&#x6570;&#x4E0E;<strong>-s</strong>&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x5219;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x662F;TCP&#x3001;UDP&#x3001;ICMP&#x3001;IP&#x3001;TCPv6&#x3001;UDPv6&#x3001;ICMPv6&#x6216;IPv6&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-p</strong></td>
+<td>&#x663E;&#x793A;&#x54EA;&#x4E9B;&#x8FDB;&#x7A0B;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x54EA;&#x4E9B;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a>&#x4E0B;&#x7684;<strong>-b</strong>&#x3002;&#xFF08;&#x9700;&#x8981;<a href="https://zh.wikipedia.org/wiki/Root%E6%9D%83%E9%99%90" target="_blank">root&#x6743;&#x9650;</a>&#x624D;&#x80FD;&#x6267;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#x3002;&#xFF09;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-P</strong></td>
+<td>&#x663E;&#x793A;&#x4F7F;&#x7528;&#x6307;&#x5B9A;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE" target="_blank">&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</a>&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x662F;IP&#x3001;IPv6&#x3001;ICMP&#x3001;ICMPv6&#x3001;IGMP&#x3001;UDP&#x3001;TCP&#x6216;RawIP&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-r</strong></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8" target="_blank">&#x8DEF;&#x7531;&#x8868;</a>&#x5185;&#x5BB9;&#xFF0C;&#x4E0E;<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a>&#x4E0B;<code>route print</code>&#x547D;&#x4EE4;&#x76F8;&#x540C;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td><strong>-s</strong></td>
+<td>&#x6309;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x663E;&#x793A;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x663E;&#x793A;TCP&#x3001;UDP&#x3001;ICMP&#x548C;IP&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;&#x5982;&#x679C;<a href="https://zh.wikipedia.org/wiki/Windows_XP" target="_blank">Windows XP</a>&#x5B89;&#x88C5;&#x4E86;IPv6&#x534F;&#x8BAE;&#xFF0C;&#x4EA6;&#x53EF;&#x4EE5;&#x663E;&#x793A;TCPv6&#x3001;UDPv6&#x3001;ICMPv6&#x548C;IPv6&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;<strong>-p</strong>&#x53C2;&#x6570;&#x53EF;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x4E00;&#x7EC4;&#x534F;&#x8BAE;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-t</strong></td>
+<td>&#x4EC5;&#x663E;&#x793A;TCP&#x8FDE;&#x63A5;&#x3002;</td>
+<td></td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td><strong>-u</strong></td>
+<td>&#x4EC5;&#x663E;&#x793A;UDP&#x8FDE;&#x63A5;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td><strong>-W</strong></td>
+<td>&#x663E;&#x793A;&#x5B8C;&#x6574;<a href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E6%9C%BA%E5%90%8D" target="_blank">&#x4E3B;&#x673A;&#x540D;</a>&#x6216;IPv6&#x5730;&#x5740;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x662F;</td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-v</strong></td>
+<td>&#x4E0E;<strong>-b</strong>&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5C06;&#x663E;&#x793A;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x76D1;&#x542C;<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E8%A8%8A%E5%9F%A0" target="_blank">&#x7AEF;&#x53E3;</a>&#x6240;&#x6D89;&#x53CA;&#x7684;&#x7EC4;&#x4EF6;&#x5217;&#x8868;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-h</strong></td>
+<td>&#x663E;&#x793A;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x63D0;&#x793A;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+</tr>
+<tr>
+<td><strong>-?</strong></td>
+<td>&#x663E;&#x793A;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x63D0;&#x793A;&#x3002;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td><strong>/?</strong></td>
+<td>&#x663E;&#x793A;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x63D0;&#x793A;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+<td>&#x5426;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;">&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</h2>
+<ul>
+<li>Proto&#xFF1A;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE" target="_blank">&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</a>&#xFF0C;&#x5305;&#x62EC;<a href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE" target="_blank">&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;</a>&#xFF08;TCP&#xFF09;&#x548C;<a href="https://zh.wikipedia.org/wiki/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE" target="_blank">&#x7528;&#x6237;&#x6570;&#x636E;&#x62A5;&#x534F;&#x8BAE;</a>&#xFF08;UDP&#xFF09;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-26" target="_blank">[26]</a></li>
+<li>Local Address&#xFF1A;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x7684;<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80" target="_blank">IP&#x5730;&#x5740;</a>&#x548C;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E8%A8%8A%E5%9F%A0" target="_blank">&#x7AEF;&#x53E3;</a>&#x53F7;&#x3002;&#x9664;&#x975E;&#x4F7F;&#x7528;<strong>-n</strong>&#x53C2;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x663E;&#x793A;&#x4E0E;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x5BF9;&#x5E94;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E4%B8%BB%E6%A9%9F%E5%90%8D%E7%A8%B1" target="_blank">&#x4E3B;&#x673A;&#x540D;&#x79F0;</a>&#x3002;&#x5982;&#x679C;&#x4E3B;&#x673A;&#x6B63;&#x5728;&#x4FA6;&#x542C;&#x6240;&#x6709;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x4E3B;&#x673A;&#x540D;&#x663E;&#x793A;&#x4E3A;<a href="https://zh.wikipedia.org/wiki/%E6%98%9F%E5%8F%B7" target="_blank">&#x661F;&#x53F7;</a>&#xFF08;*&#xFF09;&#x3002;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x5C1A;&#x672A;&#x521B;&#x5EFA;&#xFF0C;&#x5219;&#x7AEF;&#x53E3;&#x53F7;&#x663E;&#x793A;&#x4E3A;&#x661F;&#x53F7;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-27" target="_blank">[27]</a></li>
+<li>Foreign Address&#xFF1A;&#x8FDC;&#x7A0B;&#x8BA1;&#x7B97;&#x673A;&#x7684;IP&#x5730;&#x5740;&#x548C;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x3002;&#x9664;&#x975E;&#x6307;&#x5B9A;&#x4E86;<strong>-n</strong>&#x53C2;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x663E;&#x793A;&#x4E0E;IP&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x79F0;&#x3002;&#x5982;&#x679C;&#x7AEF;&#x53E3;&#x5C1A;&#x672A;&#x521B;&#x5EFA;&#xFF0C;&#x5219;&#x7AEF;&#x53E3;&#x53F7;&#x663E;&#x793A;&#x4E3A;&#x661F;&#x53F7;&#xFF08;*&#xFF09;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-28" target="_blank">[28]</a></li>
+<li>State&#xFF1A;TCP&#x8FDE;&#x63A5;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x80FD;&#x7684;&#x72B6;&#x6001;&#x5305;&#x62EC;CLOSE_WAIT&#x3001;CLOSED&#x3001;ESTABLISHED&#x3001;FIN_WAIT_1&#x3001;FIN_WAIT_2&#x3001;LAST_ACK&#x3001;LISTEN&#x3001;SYN_RECEIVED&#x3001;SYN_SEND&#x548C;TIME_WAIT&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-29" target="_blank">[29]</a></li>
+</ul>
+<h2 id="&#x547D;&#x4EE4;&#x8303;&#x4F8B;">&#x547D;&#x4EE4;&#x8303;&#x4F8B;</h2>
+<p>&#x8981;&#x4EC5;&#x663E;&#x793A;TCP&#x6216;UDP&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x952E;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x4E4B;&#x4E00;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-30" target="_blank">[30]</a>&#xFF1A;</p>
+<blockquote>
+<p><code>netstat -sp tcp</code></p>
+<p><code>netstat -sp udp</code></p>
+</blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F" target="_blank">&#x7C7B;Unix&#x7CFB;&#x7EDF;</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-gf-1" target="_blank">[1]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-twenty-3" target="_blank">[3]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_foundation-9" target="_blank">[9]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-31" target="_blank">[31]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-32" target="_blank">[32]</a>&#xFF1A;</p>
+<blockquote>
+<p><code>netstat -aop | grep &quot;pid&quot;</code></p>
+<p><code>sudo netstat -nutpacw</code></p>
+</blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-ms_doc-14" target="_blank">[14]</a>&#xFF1A;</p>
+<blockquote>
+<p><code>netstat -o 5</code></p>
+<p><code>netstat -no</code></p>
+</blockquote>
+<h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
+<h3 id="linux-deepin1511">linux-deepin15.11</h3>
+<pre><code>NETSTAT(8)                       Linux Programmer&apos;s Manual                      NETSTAT(8)
+
+NAME
+       netstat - &#x663E;&#x793A;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF0C;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x63A5;&#x53E3;&#x72B6;&#x6001;&#xFF0C;&#x4F2A;&#x88C5;&#x8FDE;&#x63A5;&#xFF0C;&#x7F51;&#x7EDC;&#x94FE;&#x8DEF;&#x4FE1;&#x606F;&#x548C;&#x7EC4;&#x64AD;&#x6210;&#x5458;&#x7EC4;&#x3002;
+
+&#x603B;&#x89C8; SYNOPSIS
+       netstat  [address_family_options] [--tcp|-t] [--udp|-u] [--raw|-w] [--listening|-l]
+       [--all|-a]    [--numeric|-n]    [--numeric-hosts][--numeric-ports][--numeric-ports]
+       [--symbolic|-N]     [--extend|-e[--extend|-e]]     [--timers|-o]     [--program|-p]
+       [--verbose|-v] [--continuous|-c] [delay]
+
+       netstat    {--route|-r}     [address_family_options]     [--extend|-e[--extend|-e]]
+       [--verbose|-v]  [--numeric|-n]  [--numeric-hosts][--numeric-ports][--numeric-ports]
+       [--continuous|-c] [delay]
+
+       netstat    {--interfaces|-i}    [iface]    [--all|-a]    [--extend|-e[--extend|-e]]
+       [--verbose|-v]     [--program|-p]    [--numeric|-n]    [--numeric-hosts][--numeric-
+       ports][--numeric-ports] [--continuous|-c] [delay]
+
+       netstat {--groups|-g} [--numeric|-n]  [--numeric-hosts][--numeric-ports][--numeric-
+       ports] [--continuous|-c] [delay]
+
+       netstat {--masquerade|-M} [--extend|-e] [--numeric|-n] [--numeric-hosts][--numeric-
+       ports][--numeric-ports] [--continuous|-c] [delay]
+
+       netstat {--statistics|-s} [--tcp|-t] [--udp|-u] [--raw|-w] [delay]
+
+       netstat {--version|-V}
+
+       netstat {--help|-h}
+
+       address_family_options:
+
+       [--protocol={inet,unix,ipx,ax25,netrom,ddp}[,...]]     [--unix|-x]    [--inet|--ip]
+       [--ax25] [--ipx] [--netrom] [--ddp]
+
+&#x63CF;&#x8FF0; DESCRIPTION
+       Netstat  &#x7A0B;&#x5E8F;&#x663E;&#x793A;Linux&#x7F51;&#x7EDC;&#x5B50;&#x7CFB;&#x7EDF;&#x7684;&#x4FE1;&#x606F;&#x3002; &#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x7531;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x63A7;&#x5236;&#x7684;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;
+       &#x6837;&#xFF1A;
+
+   (none)
+       &#x65E0;&#x9009;&#x9879;&#x65F6;, netstat &#x663E;&#x793A;&#x6253;&#x5F00;&#x7684;&#x5957;&#x63A5;&#x5B57;.  &#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x4EFB;&#x4F55;&#x5730;&#x5740;&#x65CF;&#xFF0C;&#x90A3;&#x4E48;&#x6253;&#x5370;&#x51FA;&#x6240;&#x6709;&#x5DF2;&#x914D;&#x7F6E;&#x5730;&#x5740;
+       &#x65CF;&#x7684;&#x6709;&#x6548;&#x5957;&#x63A5;&#x5B57;&#x3002;
+   --route , -r
+       &#x663E;&#x793A;&#x5185;&#x6838;&#x8DEF;&#x7531;&#x8868;&#x3002;
+
+   --groups , -g
+       &#x663E;&#x793A;IPv4 &#x548C; IPv6&#x7684;IGMP&#x7EC4;&#x64AD;&#x7EC4;&#x6210;&#x5458;&#x5173;&#x7CFB;&#x4FE1;&#x606F;&#x3002;
+
+   --interface=iface , -i
+       &#x663E;&#x793A;&#x6240;&#x6709;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x5217;&#x8868;&#x6216;&#x8005;&#x662F;&#x6307;&#x5B9A;&#x7684; iface &#x3002;
+
+   --masquerade , -M
+       &#x663E;&#x793A;&#x4E00;&#x4EFD;&#x6240;&#x6709;&#x7ECF;&#x4F2A;&#x88C5;&#x7684;&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x3002;
+
+   --statistics , -s
+       &#x663E;&#x793A;&#x6BCF;&#x79CD;&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;
+
+&#x9009;&#x9879; OPTIONS
+   --verbose , -v
+       &#x8BE6;&#x7EC6;&#x6A21;&#x5F0F;&#x8FD0;&#x884C;&#x3002;&#x7279;&#x522B;&#x662F;&#x6253;&#x5370;&#x4E00;&#x4E9B;&#x5173;&#x4E8E;&#x672A;&#x914D;&#x7F6E;&#x5730;&#x5740;&#x65CF;&#x7684;&#x6709;&#x7528;&#x4FE1;&#x606F;&#x3002;
+
+   --numeric , -n
+       &#x663E;&#x793A;&#x6570;&#x5B57;&#x5F62;&#x5F0F;&#x5730;&#x5740;&#x800C;&#x4E0D;&#x662F;&#x53BB;&#x89E3;&#x6790;&#x4E3B;&#x673A;&#x3001;&#x7AEF;&#x53E3;&#x6216;&#x7528;&#x6237;&#x540D;&#x3002;
+
+   --numeric-hosts
+       &#x663E;&#x793A;&#x6570;&#x5B57;&#x5F62;&#x5F0F;&#x7684;&#x4E3B;&#x673A;&#x4F46;&#x662F;&#x4E0D;&#x5F71;&#x54CD;&#x7AEF;&#x53E3;&#x6216;&#x7528;&#x6237;&#x540D;&#x7684;&#x89E3;&#x6790;&#x3002;
+
+   --numeric-ports
+       &#x663E;&#x793A;&#x6570;&#x5B57;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5F71;&#x54CD;&#x4E3B;&#x673A;&#x6216;&#x7528;&#x6237;&#x540D;&#x7684;&#x89E3;&#x6790;&#x3002;
+
+   --numeric-users
+       &#x663E;&#x793A;&#x6570;&#x5B57;&#x7684;&#x7528;&#x6237;ID&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5F71;&#x54CD;&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x540D;&#x7684;&#x89E3;&#x6790;&#x3002;
+
+   --protocol=family , -A
+       &#x6307;&#x5B9A;&#x8981;&#x663E;&#x793A;&#x54EA;&#x4E9B;&#x8FDE;&#x63A5;&#x7684;&#x5730;&#x5740;&#x65CF;(&#x4E5F;&#x8BB8;&#x5728;&#x5E95;&#x5C42;&#x534F;&#x8BAE;&#x4E2D;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x63CF;&#x8FF0;)&#x3002;  family &#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x5730;
+       &#x5740;&#x65CF;&#x5217;&#x8868;&#xFF0C;&#x6BD4;&#x5982; inet, unix, ipx, ax25, netrom, &#x548C; ddp&#x3002;  &#x8FD9;&#x6837;&#x548C;&#x4F7F;&#x7528;  --inet,  --unix
+       (-x), --ipx, --ax25, --netrom, &#x548C; --ddp &#x9009;&#x9879;&#x6548;&#x679C;&#x76F8;&#x540C;&#x3002;
+
+       &#x5730;&#x5740;&#x65CF; inet &#x5305;&#x62EC;raw, udp &#x548C;tcp &#x534F;&#x8BAE;&#x5957;&#x63A5;&#x5B57;&#x3002;
+
+   -c, --continuous
+       &#x5C06;&#x4F7F; netstat &#x4E0D;&#x65AD;&#x5730;&#x6BCF;&#x79D2;&#x8F93;&#x51FA;&#x6240;&#x9009;&#x7684;&#x4FE1;&#x606F;&#x3002;
+   -e, --extend
+       &#x663E;&#x793A;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x4E24;&#x6B21;&#x6765;&#x83B7;&#x5F97;&#x6240;&#x6709;&#x7EC6;&#x8282;&#x3002;
+
+   -o, --timers
+       &#x5305;&#x542B;&#x4E0E;&#x7F51;&#x7EDC;&#x5B9A;&#x65F6;&#x5668;&#x6709;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;
+
+   -p, --program
+       &#x663E;&#x793A;&#x5957;&#x63A5;&#x5B57;&#x6240;&#x5C5E;&#x8FDB;&#x7A0B;&#x7684;PID&#x548C;&#x540D;&#x79F0;&#x3002;
+
+   -l, --listening
+       &#x53EA;&#x663E;&#x793A;&#x6B63;&#x5728;&#x4FA6;&#x542C;&#x7684;&#x5957;&#x63A5;&#x5B57;(&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x9009;&#x9879;)
+
+   -a, --all
+       &#x663E;&#x793A;&#x6240;&#x6709;&#x6B63;&#x5728;&#x6216;&#x4E0D;&#x5728;&#x4FA6;&#x542C;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x3002;&#x52A0;&#x4E0A; --interfaces &#x9009;&#x9879;&#x5C06;&#x663E;&#x793A;&#x6CA1;&#x6709;&#x6807;&#x8BB0;&#x7684;&#x63A5;&#x53E3;&#x3002;
+
+   -F
+       &#x663E;&#x793A;FIB&#x4E2D;&#x7684;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x3002;(&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x9009;&#x9879;)
+
+   -C
+       &#x663E;&#x793A;&#x8DEF;&#x7531;&#x7F13;&#x51B2;&#x4E2D;&#x7684;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x3002;
+
+   delay
+       netstat&#x5C06;&#x5FAA;&#x73AF;&#x8F93;&#x51FA;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x6BCF;&#x9694; delay &#x79D2;&#x3002;
+
+&#x8F93;&#x51FA; OUTPUT
+   &#x6D3B;&#x52A8;&#x7684;Internet&#x7F51;&#x7EDC;&#x8FDE;&#x63A5; (TCP, UDP, raw)
+   Proto
+       &#x5957;&#x63A5;&#x5B57;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x3002;
+
+   Recv-Q
+       &#x8FDE;&#x63A5;&#x6B64;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x672A;&#x62F7;&#x8D1D;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;
+
+   Send-Q
+       &#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x672A;&#x786E;&#x8BA4;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;
+   Local Address
+       &#x5957;&#x63A5;&#x5B57;&#x7684;&#x672C;&#x5730;&#x5730;&#x5740;(&#x672C;&#x5730;&#x4E3B;&#x673A;&#x540D;)&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x3002;&#x9664;&#x975E;&#x7ED9;&#x5B9A;-n  --numeric (-n) &#x9009;&#x9879;&#xFF0C;&#x5426;&#x5219;&#x5957;&#x63A5;&#x5B57;&#x5730;
+       &#x5740;&#x6309;&#x6807;&#x51C6;&#x4E3B;&#x673A;&#x540D;(FQDN)&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x800C;&#x7AEF;&#x53E3;&#x53F7;&#x5219;&#x8F6C;&#x6362;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x540D;&#x3002;
+
+   Foreign Address
+       &#x5957;&#x63A5;&#x5B57;&#x7684;&#x8FDC;&#x7A0B;&#x5730;&#x5740;(&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x540D;)&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x3002; Analogous to &quot;Local Address.&quot;
+
+   State
+       &#x5957;&#x63A5;&#x5B57;&#x7684;&#x72B6;&#x6001;&#x3002;&#x56E0;&#x4E3A;&#x5728;RAW&#x534F;&#x8BAE;&#x4E2D;&#x6CA1;&#x6709;&#x72B6;&#x6001;&#xFF0C;&#x800C;&#x4E14;UDP&#x4E5F;&#x4E0D;&#x7528;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x6B64;&#x884C;&#x7559;&#x7A7A;&#x3002;&#x901A;&#x5E38;&#x5B83;
+       &#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x503C;&#x4E4B;&#x4E00;&#xFF1A;
+
+       ESTABLISHED
+              &#x5957;&#x63A5;&#x5B57;&#x6709;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x8FDE;&#x63A5;&#x3002;
+
+       SYN_SENT
+              &#x5957;&#x63A5;&#x5B57;&#x5C1D;&#x8BD5;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x3002;
+
+       SYN_RECV
+              &#x4ECE;&#x7F51;&#x7EDC;&#x4E0A;&#x6536;&#x5230;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x3002;
+
+       FIN_WAIT1
+              &#x5957;&#x63A5;&#x5B57;&#x5DF2;&#x5173;&#x95ED;&#xFF0C;&#x8FDE;&#x63A5;&#x6B63;&#x5728;&#x65AD;&#x5F00;&#x3002;
+
+       FIN_WAIT2
+              &#x8FDE;&#x63A5;&#x5DF2;&#x5173;&#x95ED;&#xFF0C;&#x5957;&#x63A5;&#x5B57;&#x7B49;&#x5F85;&#x8FDC;&#x7A0B;&#x65B9;&#x4E2D;&#x6B62;&#x3002;
+
+       TIME_WAIT
+              &#x5728;&#x5173;&#x95ED;&#x4E4B;&#x540E;&#xFF0C;&#x5957;&#x63A5;&#x5B57;&#x7B49;&#x5F85;&#x5904;&#x7406;&#x4ECD;&#x7136;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x5206;&#x7EC4;
+
+       CLOSED &#x5957;&#x63A5;&#x5B57;&#x672A;&#x7528;&#x3002;
+
+       CLOSE_WAIT
+              &#x8FDC;&#x7A0B;&#x65B9;&#x5DF2;&#x5173;&#x95ED;&#xFF0C;&#x7B49;&#x5F85;&#x5957;&#x63A5;&#x5B57;&#x5173;&#x95ED;&#x3002;
+
+       LAST_ACK
+              &#x8FDC;&#x7A0B;&#x65B9;&#x4E2D;&#x6B62;&#xFF0C;&#x5957;&#x63A5;&#x5B57;&#x5DF2;&#x5173;&#x95ED;&#x3002;&#x7B49;&#x5F85;&#x786E;&#x8BA4;&#x3002;
+
+       LISTEN &#x5957;&#x63A5;&#x5B57;&#x76D1;&#x542C;&#x8FDB;&#x6765;&#x7684;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E; --listening (-l) &#x6216;&#x8005; --all (-a) &#x9009;&#x9879;&#xFF0C;&#x5C06;&#x4E0D;
+              &#x663E;&#x793A;&#x51FA;&#x6765;&#x8FD9;&#x4E9B;&#x8FDE;&#x63A5;&#x3002;
+       CLOSING
+              &#x5957;&#x63A5;&#x5B57;&#x90FD;&#x5DF2;&#x5173;&#x95ED;&#xFF0C;&#x800C;&#x8FD8;&#x672A;&#x628A;&#x6240;&#x6709;&#x6570;&#x636E;&#x53D1;&#x51FA;&#x3002;
+
+       UNKNOWN
+              &#x5957;&#x63A5;&#x5B57;&#x72B6;&#x6001;&#x672A;&#x77E5;&#x3002;
+
+   User
+       &#x5957;&#x63A5;&#x5B57;&#x5C5E;&#x4E3B;&#x7684;&#x540D;&#x79F0;&#x6216;UID&#x3002;
+
+   PID/Program name
+       &#x4EE5;&#x659C;&#x7EBF;&#x5206;&#x9694;&#x7684;&#x5904;&#x7406;&#x5957;&#x63A5;&#x5B57;&#x7A0B;&#x5E8F;&#x7684;PID&#x53CA;&#x8FDB;&#x7A0B;&#x540D;&#x3002;     --program      &#x4F7F;&#x6B64;&#x680F;&#x76EE;&#x88AB;&#x663E;&#x793A;&#x3002;&#x4F60;&#x9700;&#x8981;
+       superuser &#x6743;&#x9650;&#x6765;&#x67E5;&#x770B;&#x4E0D;&#x662F;&#x4F60;&#x62E5;&#x6709;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5BF9;IPX&#x5957;&#x63A5;&#x5B57;&#x8FD8;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#x6B64;&#x4FE1;&#x606F;&#x3002;
+
+   Timer
+       (this needs to be written)
+
+   &#x6D3B;&#x52A8;&#x7684;UNIX&#x57DF;&#x5957;&#x63A5;&#x5B57;
+   Proto
+       &#x5957;&#x63A5;&#x5B57;&#x6240;&#x7528;&#x7684;&#x534F;&#x8BAE;(&#x901A;&#x5E38;&#x662F;unix)&#x3002;
+
+   RefCnt
+       &#x4F7F;&#x7528;&#x6570;&#x91CF;(&#x4E5F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x6B64;&#x5957;&#x63A5;&#x5B57;&#x8FDE;&#x63A5;&#x7684;&#x8FDB;&#x7A0B;&#x6570;)&#x3002;
+
+   Flags
+       &#x663E;&#x793A;&#x7684;&#x6807;&#x5FD7;&#x4E3A;SO_ACCEPTON(&#x663E;&#x793A;&#x4E3A; ACC), SO_WAITDATA (W) &#x6216; SO_NOSPACE (N)&#x3002; &#x5982;&#x679C;&#x76F8;&#x5E94;&#x7684;
+       &#x8FDB;&#x7A0B;&#x7B49;&#x5F85;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#xFF0C;&#x90A3;&#x4E48;SO_ACCECPTON&#x7528;&#x4E8E;&#x672A;&#x8FDE;&#x63A5;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x3002;&#x5176;&#x5B83;&#x6807;&#x5FD7;&#x901A;&#x5E38;&#x5E76;&#x4E0D;&#x91CD;&#x8981;
+
+   Type
+       &#x5957;&#x63A5;&#x5B57;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x7C7B;&#x578B;&#xFF1A;
+
+       SOCK_DGRAM
+              &#x6B64;&#x5957;&#x63A5;&#x5B57;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x62A5;(&#x65E0;&#x8FDE;&#x63A5;)&#x6A21;&#x5F0F;&#x3002;
+
+       SOCK_STREAM
+              &#x6D41;&#x6A21;&#x5F0F;(&#x8FDE;&#x63A5;)&#x5957;&#x63A5;&#x5B57;
+
+       SOCK_RAW
+              &#x6B64;&#x5957;&#x63A5;&#x5B57;&#x7528;&#x4E8E;RAW&#x6A21;&#x5F0F;&#x3002;
+       SOCK_RDM
+              &#x4E00;&#x79CD;&#x670D;&#x52A1;&#x53EF;&#x9760;&#x6027;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#x3002;
+
+       SOCK_SEQPACKET
+              &#x8FDE;&#x7EED;&#x5206;&#x7EC4;&#x5957;&#x63A5;&#x5B57;&#x3002;
+
+       SOCK_PACKET
+              RAW&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x5957;&#x63A5;&#x5B57;&#x3002;
+
+       UNKNOWN
+              &#x5C06;&#x6765;&#x8C01;&#x77E5;&#x9053;&#x5B83;&#x7684;&#x8BDD;&#x5C06;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#xFF0C;&#x5C31;&#x586B;&#x5728;&#x8FD9;&#x91CC; :-)
+
+   State
+       &#x6B64;&#x5B57;&#x6BB5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5173;&#x952E;&#x5B57;&#x4E4B;&#x4E00;&#xFF1A;
+
+       FREE   &#x5957;&#x63A5;&#x5B57;&#x672A;&#x5206;&#x914D;&#x3002;
+
+       LISTENING
+              &#x5957;&#x63A5;&#x5B57;&#x6B63;&#x5728;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x3002;&#x9664;&#x975E;&#x8BBE;&#x7F6E; --listening (-l)  &#x6216;&#x8005;  --all  (-a)  &#x9009;
+              &#x9879;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x3002;
+
+       CONNECTING
+              &#x5957;&#x63A5;&#x5B57;&#x6B63;&#x8981;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x3002;
+
+       CONNECTED
+              &#x5957;&#x63A5;&#x5B57;&#x5DF2;&#x8FDE;&#x63A5;&#x3002;
+       DISCONNECTING
+              &#x5957;&#x63A5;&#x5B57;&#x5DF2;&#x65AD;&#x5F00;&#x3002;
+
+       (empty)
+              &#x5957;&#x63A5;&#x5B57;&#x672A;&#x8FDE;&#x3002;
+
+       UNKNOWN
+              &#xFF01;&#x4E0D;&#x5E94;&#x5F53;&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x7684;&#x3002;
+
+   PID/Program name
+       &#x5904;&#x7406;&#x6B64;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x7A0B;&#x5E8F;&#x8FDB;&#x7A0B;&#x540D;&#x548C;PID&#x3002;&#x4E0A;&#x9762;&#x5173;&#x4E8E;&#x6D3B;&#x52A8;&#x7684;Internet&#x8FDE;&#x63A5;&#x7684;&#x90E8;&#x5206;&#x6709;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x4FE1;&#x606F;&#x3002;
+
+   Path
+       &#x5F53;&#x76F8;&#x5E94;&#x8FDB;&#x7A0B;&#x8FDE;&#x5165;&#x5957;&#x63A5;&#x5B57;&#x65F6;&#x663E;&#x793A;&#x8DEF;&#x5F84;&#x540D;&#x3002;
+
+   &#x6D3B;&#x52A8;&#x7684;IPX&#x5957;&#x63A5;&#x5B57;
+       (this needs to be done by somebody who knows it)
+
+   Active NET/ROM sockets
+       (this needs to be done by somebody who knows it)
+
+   Active AX.25 sockets
+       (this needs to be done by somebody who knows it)
+
+&#x6CE8;&#x610F; NOTES
+       &#x4ECE;linux 2.2&#x5185;&#x6838;&#x5F00;&#x59CB; netstat -i &#x4E0D;&#x518D;&#x663E;&#x793A;&#x522B;&#x540D;&#x63A5;&#x53E3;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;&#x8981;&#x83B7;&#x5F97;&#x6BCF;&#x4E2A;&#x522B;&#x540D;&#x63A5;&#x53E3;&#x7684;&#x8BA1;&#x6570;
+       &#x5668;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x7528; ipchains(8) &#x547D;&#x4EE4;&#x3002;
+
+&#x6587;&#x4EF6; FILES
+       /etc/services -- &#x670D;&#x52A1;&#x89E3;&#x91CA;&#x6587;&#x4EF6;
+
+       /proc -- proc&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x3002;proc&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x901A;&#x8FC7;&#x4E0B;&#x5217;&#x6587;&#x4EF6;&#x7ED9;&#x51FA;&#x4E86;&#x5185;&#x6838;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;
+
+       /proc/net/dev -- &#x8BBE;&#x5907;&#x4FE1;&#x606F;
+       /proc/net/raw -- RAW&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/tcp -- TCP&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/udp -- UDP&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/igmp -- IGMP&#x7EC4;&#x64AD;&#x4FE1;&#x606F;
+
+       /proc/net/unix -- Unix&#x57DF;&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/ipx -- IPX&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/ax25 -- AX25&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/appletalk -- DDP(appletalk)&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/nr -- NET/ROM&#x5957;&#x63A5;&#x5B57;&#x4FE1;&#x606F;
+
+       /proc/net/route -- IP&#x8DEF;&#x7531;&#x4FE1;&#x606F;
+
+       /proc/net/ax25_route -- AX25&#x8DEF;&#x7531;&#x4FE1;&#x606F;
+
+       /proc/net/ipx_route -- IPX&#x8DEF;&#x7531;&#x4FE1;&#x606F;
+
+       /proc/net/nr_nodes -- NET/ROM&#x8282;&#x70B9;&#x5217;&#x8868;
+
+       /proc/net/nr_neigh -- NET/ROM&#x90BB;&#x7AD9;
+
+       /proc/net/ip_masquerade -- &#x4F2A;&#x88C5;&#x8FDE;&#x63A5;
+       /proc/net/snmp -- &#x7EDF;&#x8BA1;
+
+&#x53C2;&#x89C1; SEE ALSO
+       route(8), ifconfig(8), ipchains(8), iptables(8), proc(5)
+
+BUGS
+       &#x6709;&#x65F6;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5957;&#x63A5;&#x5B57;&#x5728;&#x67E5;&#x770B;&#x4E2D;&#x53D1;&#x751F;&#x4E86;&#x6539;&#x53D8;&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x4E9B;&#x5947;&#x602A;&#x7684;&#x4FE1;&#x606F;&#x3002; &#x4E00;&#x822C;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;
+
+&#x4F5C;&#x8005; AUTHORS
+       netstat &#x7A0B;&#x5E8F;&#x662F; Fred Baumgarten&lt;dc6iq@insu1.etec.uni-karlsruhe.de&gt; &#x7684;&#x4F5C;&#x54C1;&#x3002;
+
+       &#x624B;&#x518C;&#x9875;&#x662F;Matt Welsh &lt;mdw@tc.cornell.edu&gt; &#x5199;&#x7684;&#x3002;
+
+       Alan Cox &lt;Alan.Cox@linux.org&gt; &#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x9700;&#x8981;&#x505A;&#x66F4;&#x591A;&#x5DE5;&#x4F5C;&#x3002;
+
+       Tuan Hoang&lt;tqhoang@bigfoot.com&gt; &#x53C8;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x66F4;&#x65B0;&#x3002;
+
+       Bernd Eckenfels &lt;ecki@linux.de&gt; &#x5F7B;&#x5E95;&#x91CD;&#x5199;&#x4E86;&#x624B;&#x518C;&#x9875;&#x548C;net-tools&#x5DE5;&#x5177;&#x5305;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#x3002;
+
+[&#x4E2D;&#x6587;&#x7248;&#x7EF4;&#x62A4;&#x4EBA;]
+       meaculpa &lt;meaculpa@21cn.com&gt;
+
+[&#x4E2D;&#x6587;&#x7248;&#x6700;&#x65B0;&#x66F4;&#x65B0;]
+       2000/12/08
+
+&#x300A;&#x4E2D;&#x56FD;linux&#x8BBA;&#x575B;man&#x624B;&#x518C;&#x9875;&#x7FFB;&#x8BD1;&#x8BA1;&#x5212;&#x300B;:
+       http://cmpp.linuxforum.net
+
+&#x8DCB;
+       &#x672C;&#x9875;&#x9762;&#x4E2D;&#x6587;&#x7248;&#x7531;&#x4E2D;&#x6587; man &#x624B;&#x518C;&#x9875;&#x8BA1;&#x5212;&#x63D0;&#x4F9B;&#x3002;
+       &#x4E2D;&#x6587; man &#x624B;&#x518C;&#x9875;&#x8BA1;&#x5212;&#xFF1A;https://github.com/man-pages-zh/manpages-zh
+
+net-tools                            19 December 2000                           NETSTAT(8)
+</code></pre><pre><code>
+
+</code></pre><h3 id="win7x64">win7x64</h3>
+<pre><code>netstat /?
+</code></pre><pre><code>&#x663E;&#x793A;&#x534F;&#x8BAE;&#x7EDF;&#x8BA1;&#x548C;&#x5F53;&#x524D; TCP/IP &#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x3002;
+
+NETSTAT [-a] [-b] [-e] [-f] [-n] [-o] [-p proto] [-r] [-s] [-t] [interval]
+
+  -a            &#x663E;&#x793A;&#x6240;&#x6709;&#x8FDE;&#x63A5;&#x548C;&#x4FA6;&#x542C;&#x7AEF;&#x53E3;&#x3002;
+  -b            &#x663E;&#x793A;&#x5728;&#x521B;&#x5EFA;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x6216;&#x4FA6;&#x542C;&#x7AEF;&#x53E3;&#x65F6;&#x6D89;&#x53CA;&#x7684;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x3002;
+                &#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5DF2;&#x77E5;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x627F;&#x8F7D;&#x591A;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;
+                &#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x663E;&#x793A;&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x6216;&#x4FA6;&#x542C;&#x7AEF;&#x53E3;&#x65F6;&#x6D89;
+                &#x53CA;&#x7684;&#x7EC4;&#x4EF6;&#x5E8F;&#x5217;&#x3002;&#x6B64;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x79F0;
+                &#x4F4D;&#x4E8E;&#x5E95;&#x90E8;[]&#x4E2D;&#xFF0C;&#x5B83;&#x8C03;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x4F4D;&#x4E8E;&#x9876;&#x90E8;&#xFF0C;&#x76F4;&#x81F3;&#x8FBE;
+                &#x5230; TCP/IP&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x9009;&#x9879;&#x53EF;&#x80FD;&#x5F88;&#x8017;&#x65F6;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x60A8;&#x6CA1;&#x6709;
+                &#x8DB3;&#x591F;&#x6743;&#x9650;&#x65F6;&#x53EF;&#x80FD;&#x5931;&#x8D25;&#x3002;
+  -e            &#x663E;&#x793A;&#x4EE5;&#x592A;&#x7F51;&#x7EDF;&#x8BA1;&#x3002;&#x6B64;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x4E0E; -s &#x9009;&#x9879;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x3002;
+  -f            &#x663E;&#x793A;&#x5916;&#x90E8;&#x5730;&#x5740;&#x7684;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D;(FQDN)&#x3002;
+  -n            &#x4EE5;&#x6570;&#x5B57;&#x5F62;&#x5F0F;&#x663E;&#x793A;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x3002;
+  -o            &#x663E;&#x793A;&#x62E5;&#x6709;&#x7684;&#x4E0E;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x5173;&#x8054;&#x7684;&#x8FDB;&#x7A0B; ID&#x3002;
+  -p proto      &#x663E;&#x793A; proto &#x6307;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x8FDE;&#x63A5;&#xFF1B;proto &#x53EF;&#x4EE5;&#x662F;&#x4E0B;&#x5217;&#x4EFB;
+                &#x4F55;&#x4E00;&#x4E2A;: TCP&#x3001;UDP&#x3001;TCPv6 &#x6216; UDPv6&#x3002;&#x5982;&#x679C;&#x4E0E; -s &#x9009;
+                &#x9879;&#x4E00;&#x8D77;&#x7528;&#x6765;&#x663E;&#x793A;&#x6BCF;&#x4E2A;&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#xFF0C;proto &#x53EF;&#x4EE5;&#x662F;&#x4E0B;&#x5217;&#x4EFB;
+                &#x4F55;&#x4E00;&#x4E2A;: IP&#x3001;IPv6&#x3001;ICMP&#x3001;ICMPv6&#x3001;TCP&#x3001;TCPv6&#x3001;UDP
+                &#x6216; UDPv6&#x3002;
+  -r            &#x663E;&#x793A;&#x8DEF;&#x7531;&#x8868;&#x3002;
+  -s            &#x663E;&#x793A;&#x6BCF;&#x4E2A;&#x534F;&#x8BAE;&#x7684;&#x7EDF;&#x8BA1;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x663E;&#x793A;
+                IP&#x3001;IPv6&#x3001;ICMP&#x3001;ICMPv6&#x3001;TCP&#x3001;TCPv6&#x3001;UDP &#x548C; UDPv6
+                &#x7684;&#x7EDF;&#x8BA1;&#xFF1B;-p &#x9009;&#x9879;&#x53EF;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x7684;&#x5B50;&#x7F51;&#x3002;
+  -t            &#x663E;&#x793A;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x5378;&#x8F7D;&#x72B6;&#x6001;&#x3002;
+  interval      &#x91CD;&#x65B0;&#x663E;&#x793A;&#x9009;&#x5B9A;&#x7684;&#x7EDF;&#x8BA1;&#xFF0C;&#x5404;&#x4E2A;&#x663E;&#x793A;&#x95F4;&#x6682;&#x505C;&#x7684;&#x95F4;&#x9694;&#x79D2;&#x6570;&#x3002;
+                &#x6309; CTRL+C &#x505C;&#x6B62;&#x91CD;&#x65B0;&#x663E;&#x793A;&#x7EDF;&#x8BA1;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x5219; netstat
+                &#x5C06;&#x6253;&#x5370;&#x5F53;&#x524D;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x4E00;&#x6B21;&#x3002;
+</code></pre><pre><code>zander@zander-PC:~/Desktop$ netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        1      0 zander-PC.lan:37370     tl-in-f188.1e100.n:5228 CLOSE_WAIT 
+tcp        1      0 10.0.138.7:54389        210.22.245.XXX:http     CLOSE_WAIT 
+tcp        0      0 zander-PC.lan:56272     91.108.56.XXX:http      TIME_WAIT  
+tcp        1      0 zander-PC.lan:49763     223.166.151.XXX:http    CLOSE_WAIT 
+tcp        0      0 zander-PC.lan:37368     tl-in-f188.1e100.n:5228 ESTABLISHED
+tcp        1      0 zander-PC.lan:46351     223.166.151.XXX:http    CLOSE_WAIT 
+tcp        1      0 10.0.137.87:39785       223.166.151.XXX:http    CLOSE_WAIT 
+tcp        1      0 10.0.138.7:42099        223.167.87.XXX:http     CLOSE_WAIT 
+tcp        0      0 zander-PC.lan:58028     91.108.56.XXX:https     ESTABLISHED
+tcp        1      0 zander-PC.lan:33347     180.97.117.XXX:http      CLOSE_WAIT 
+tcp        1      0 10.0.137.87:39795       223.166.151.XXX:http    CLOSE_WAIT 
+tcp        0      0 zander-PC.lan:40666     91.108.56.XXX:http      TIME_WAIT  
+tcp        0      0 zander-PC.lan:56292     91.108.56.XXX:http      TIME_WAIT  
+tcp        0      0 zander-PC.lan:47064     47.103.46.XXX:https     ESTABLISHED
+tcp        0      0 zander-PC.lan:37918     138.197.56.XXX:https    ESTABLISHED
+tcp        0      0 zander-PC.lan:48051     116.128.163.XXX:http     TIME_WAIT  
+tcp        0      0 zander-PC.lan:58960     47.111.15.XXX:https     ESTABLISHED
+tcp        1      0 10.0.138.7:60505        223.166.151.XXX:http    CLOSE_WAIT 
+tcp        1      0 zander-PC.lan:43541     223.167.87.XXX:http     CLOSE_WAIT 
+tcp        1      0 zander-PC.lan:38405     210.22.245.XXX:http     CLOSE_WAIT 
+tcp        1      0 zander-PC.lan:40996     120.92.84.XXX:9002      CLOSE_WAIT 
+tcp6       0      0 zander-PC.lan:44610     58.215.175.XXX:http      ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ]         DGRAM                    41275    /run/user/1000/systemd/notify
+unix  3      [ ]         DGRAM                    18980    /run/systemd/notify
+unix  2      [ ]         DGRAM                    18981    /run/systemd/cgroups-agent
+unix  2      [ ]         DGRAM                    30497    /var/lib/samba/private/msg.sock/3630
+unix  2      [ ]         DGRAM                    36091    /var/lib/samba/private/msg.sock/3801
+unix  2      [ ]         DGRAM                    36896    /var/lib/samba/private/msg.sock/3802
+unix  74     [ ]         DGRAM                    18991    /run/systemd/journal/dev-log
+</code></pre><pre><code>C:\Users\2017&gt;netstat
+
+&#x6D3B;&#x52A8;&#x8FDE;&#x63A5;
+
+  &#x534F;&#x8BAE;  &#x672C;&#x5730;&#x5730;&#x5740;          &#x5916;&#x90E8;&#x5730;&#x5740;        &#x72B6;&#x6001;
+  TCP    127.0.0.1:5939         ZS301-1:49167          ESTABLISHED
+  TCP    127.0.0.1:49167        ZS301-1:5939           ESTABLISHED
+  TCP    172.16.0.77:49166      RS-BEG-ANX-R004:5938   ESTABLISHED
+  TCP    172.16.0.77:49263      180.163.235.XXX:http   ESTABLISHED
+  TCP    172.16.0.77:49337      172.16.63.11:ms-sql-s  ESTABLISHED
+  TCP    172.16.0.77:49375      123.125.82.XXX:http    CLOSE_WAIT
+  TCP    172.16.0.77:49862      hn:http                ESTABLISHED
+  TCP    172.16.0.77:50918      180.163.198.XXX:https   TIME_WAIT
+  TCP    172.16.0.77:50919      tsa01s07-in-f14:https  SYN_SENT
+  TCP    172.16.0.77:50920      tsa01s07-in-f14:https  SYN_SENT
+  TCP    172.16.0.77:50921      33:https               TIME_WAIT
+  TCP    172.16.0.77:50924      58.222.53.XXX:https     TIME_WAIT
+  TCP    172.16.0.77:50925      58.222.53.XXX:https     TIME_WAIT
+  TCP    172.16.0.77:50926      33:https               TIME_WAIT
+  TCP    172.16.0.77:50927      58.222.53.XXX:https     TIME_WAIT
+  TCP    172.16.0.77:50928      58.222.53.XXX:https     TIME_WAIT
+  TCP    172.16.0.77:50929      33:https               TIME_WAIT
+  TCP    172.16.0.77:50937      117.18.237.XXX:http     ESTABLISHED
+  TCP    172.16.0.77:50938      172.16.12.XXX:9100      SYN_SENT
+  TCP    172.16.0.77:50939      185.199.108.XXX:https  ESTABLISHED
+  TCP    172.16.0.77:50942      185.199.108.XXX:https  ESTABLISHED
+  TCP    172.16.0.77:50947      185.199.110.XXX:https  ESTABLISHED
+  TCP    172.16.0.77:50953      tsa01s07-in-f14:https  SYN_SENT
+  TCP    172.16.0.77:50954      203.208.40.XXX:https    ESTABLISHED
+  TCP    172.16.0.77:50955      203.208.50.XXX:https    ESTABLISHED
+  TCP    172.16.0.77:50956      ec2-34-193-127-114:https  ESTABLISHED
+  TCP    172.16.0.77:50958      ec2-34-193-127-114:https  ESTABLISHED
+
+C:\Users\2017&gt;
+</code></pre><h2 id="&#x5E94;&#x7528;&#xFF08;&#x7C7B;unix&#x7CFB;&#x7EDF;&#xFF09;">&#x5E94;&#x7528;&#xFF08;&#x7C7B;UNIX&#x7CFB;&#x7EDF;&#xFF09;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x8BF4;&#x660E;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-errors-4" target="_blank">[4]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_foundation-9" target="_blank">[9]</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>netstat -a</code></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;&#x7AEF;&#x53E3;&#xFF08;&#x65E0;&#x8BBA;&#x88AB;&#x76D1;&#x542C;&#x6216;&#x4E0D;&#x88AB;&#x76D1;&#x542C;&#xFF09;&#x3001;&#x6240;&#x6709;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x7684;&#x8FDE;&#x63A5;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -at</code></td>
+<td>&#x4EC5;&#x663E;&#x793A;TCP&#x8FDE;&#x63A5;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -au</code></td>
+<td>&#x4EC5;&#x663E;&#x793A;UDP&#x8FDE;&#x63A5;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -ant</code></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;TCP&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x4E0D;&#x8FDB;&#x884C;<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90" target="_blank">&#x57DF;&#x540D;&#x89E3;&#x6790;</a>&#xFF08;&#x5373;&#x663E;&#x793A;IP&#x5730;&#x5740;&#x800C;&#x4E0D;&#x663E;&#x793A;&#x4E3B;&#x673A;&#x540D;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -al</code></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;&#x88AB;&#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;&#x3002;</td>
+</tr>
+<tr>
+<td><code>sudo netstat -aep</code></td>
+<td>&#x540C;&#x65F6;&#x663E;&#x793A;&#x6BCF;&#x4E2A;&#x7AEF;&#x53E3;&#x76F8;&#x5173;&#x7684;&#x8FDB;&#x7A0B;&#x548C;&#x8FDB;&#x7A0B;ID&#xFF08;&#x9700;&#x8981;<a href="https://zh.wikipedia.org/wiki/Root%E6%9D%83%E9%99%90" target="_blank">root&#x6743;&#x9650;</a>&#x4EE5;&#x8FD0;&#x884C;&#x6B64;&#x547D;&#x4EE4;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -s &gt; wiki.txt</code></td>
+<td>&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x5230;&#x6587;&#x672C;&#x6587;&#x4EF6;<code>wiki.txt</code>&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -r</code></td>
+<td>&#x663E;&#x793A;&#x8DEF;&#x7531;&#x8868;&#x3002;&#x4E0E;<code>route -e</code>&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x76F8;&#x540C;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -i</code></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3" target="_blank">&#x7F51;&#x7EDC;&#x63A5;&#x53E3;</a>&#x3002;<code>netstat -i -e</code>&#x4E0E;<code>ipconfig</code>&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7C7B;&#x4F3C;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -ct</code></td>
+<td>&#x663E;&#x793A;TCP&#x8FDE;&#x63A5;&#xFF08;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -g</code></td>
+<td>&#x663E;&#x793A;<a href="https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%92%AD#IP%E5%A4%9A%E6%92%AD" target="_blank">&#x591A;&#x64AD;&#x7EC4;</a>&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td><code>netstat -lntu</code></td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B" target="_blank">&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;</a>&#x548C;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x6240;&#x6709;&#x7A7A;&#x95F2;&#x7684;&#x5F00;&#x653E;&#x7AEF;&#x53E3;&#x3002;</td>
+</tr>
+<tr>
+<td>`netstat -atnp</td>
+<td>grep ESTA`</td>
+<td>&#x663E;&#x793A;&#x6240;&#x6709;&#x72B6;&#x6001;&#x4E3A;ESTABLISHED&#x7684;TCP&#x8FDE;&#x63A5;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x901A;&#x914D;&#x7B26;">&#x901A;&#x914D;&#x7B26;</h3>
+<p>&#x5728;<code>netstat</code>&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E2D;&#xFF0C;<a href="https://zh.wikipedia.org/wiki/%E6%98%9F%E5%8F%B7" target="_blank">&#x661F;&#x53F7;</a>&#xFF08;*&#xFF09;&#x4E3A;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x8868;&#x793A;&#x201C;&#x6240;&#x6709;&#x201D;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_ip-33" target="_blank">[33]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-gbook_163-34" target="_blank">[34]</a></p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>....Local Address Foreign Address State
+... *:smtp          *:*   LISTEN
+</code></pre><p>&#x5728;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E2D;&#xFF0C;<code>*:smtp</code>&#x8868;&#x793A;&#x8BE5;&#x8FDB;&#x7A0B;&#x6B63;&#x5728;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x6240;&#x6709;<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3" target="_blank">&#x7F51;&#x7EDC;&#x63A5;&#x53E3;</a>&#x4E0A;&#x76D1;&#x542C;&#x6240;&#x6709;<a href="https://zh.wikipedia.org/wiki/%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84" target="_blank">&#x6620;&#x5C04;</a>&#x4E3A;<a href="https://zh.wikipedia.org/wiki/SMTP" target="_blank">SMTP</a>&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x6B64;&#x5904;&#x7684;&#x661F;&#x53F7;&#x6709;&#x65F6;&#x4F1A;&#x88AB;0.0.0.0&#x4EE3;&#x66FF;&#xFF0C;&#x610F;&#x4E49;&#x4E0D;&#x6539;&#x53D8;&#x3002;<code>*:*</code>&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x661F;&#x53F7;&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x53EF;&#x4EE5;&#x6765;&#x81EA;&#x4EFB;&#x4F55;<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80" target="_blank">IP&#x5730;&#x5740;</a>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x661F;&#x53F7;&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x53EF;&#x4EE5;&#x6765;&#x81EA;&#x8FDC;&#x7A0B;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x7AEF;&#x53E3;&#x3002;<a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-ibm-25" target="_blank">[25]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-linux_ip-33" target="_blank">[33]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-gbook_163-34" target="_blank">[34]</a><a href="https://zh.wikipedia.org/wiki/Netstat#cite_note-35" target="_blank">[35]</a></p>
+<h3 id="&#x5916;&#x90E8;&#x94FE;&#x63A5;">&#x5916;&#x90E8;&#x94FE;&#x63A5;</h3>
+<ul>
+<li><code>netstat(8)</code> &#x2013; <a href="https://zh.wikipedia.org/wiki/Linux" target="_blank">Linux</a>&#x7A0B;&#x5E8F;&#x5458;<a href="https://zh.wikipedia.org/wiki/%E6%89%8B%E5%86%8C%E9%A1%B5" target="_blank">&#x624B;&#x518C;&#x9875;</a> &#x2013; &#x7BA1;&#x7406;&#x53CA;&#x7279;&#x6743;&#x547D;&#x4EE4;&#xFF08;Administration and Privileged Commands&#xFF09;</li>
+<li><code>netstat(1)</code> &#x2013; <a href="https://zh.wikipedia.org/wiki/FreeBSD" target="_blank">FreeBSD</a>&#x901A;&#x7528;&#x547D;&#x4EE4;&#xFF08;General Commands&#xFF09;<a href="https://zh.wikipedia.org/wiki/%E6%89%8B%E5%86%8C%E9%A1%B5" target="_blank">&#x624B;&#x518C;&#x9875;</a></li>
+<li><code>netstat(1M)</code> &#x2013; <a href="https://zh.wikipedia.org/wiki/Solaris_(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F" target="_blank">Solaris 10</a>)&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x547D;&#x4EE4;&#xFF08;System Administration Commands&#xFF09;&#x53C2;&#x8003;<a href="https://zh.wikipedia.org/wiki/%E6%89%8B%E5%86%8C%E9%A1%B5" target="_blank">&#x624B;&#x518C;&#x9875;</a></li>
+</ul>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/Netstat" target="_blank">https://zh.wikipedia.org/wiki/Netstat</a></li>
+</ul>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1089.html" class="navigation navigation-prev " aria-label="Previous page: net">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1091.html" class="navigation navigation-next " aria-label="Next page: ping">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"netstat","level":"1.5.4","depth":2,"next":{"title":"ping","level":"1.5.5","depth":2,"path":"page/1091.md","ref":"page/1091.md","articles":[]},"previous":{"title":"net","level":"1.5.3","depth":2,"path":"page/1089.md","ref":"page/1089.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","gtag@git+https://github.com/plugins-zander/gitbook-plugin-gtag.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"sitemap-general":{"prefix":"https://zlogs.net/learn-computer-networks/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"gtag":{"token":"UA-149127400-1"},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"EDIT","base":"https://github.com/ZanderZhao/learn-computer-networks/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-computer-networks","language":"zh-hans","gitbook":"3.2.3","description":"learn-computer-networks - Zander's Learn Book"},"file":{"path":"page/1090.md","mtime":"2020-04-09T07:48:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T07:50:24.567Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gtag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
